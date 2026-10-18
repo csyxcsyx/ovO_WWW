@@ -1,0 +1,90 @@
+/* Placement and idle motion belong to separate elements, so scaling, entrance
+   and floating never compete for the same transform. Decorative and aria-hidden. */
+.hero-visual { grid-area: visual; position: relative; width: 100%; height: 440px; transform: translateY(-15px); user-select: none; pointer-events: none; }
+.orbit { position: absolute; border: 1px solid #dedede; border-radius: 50%; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.orbit-outer { width: 420px; height: 420px; opacity: .75; }
+.orbit-inner { width: 322px; height: 322px; border-style: dashed; border-color: #ddd; animation: orbit-drift 100s linear infinite; }
+.orbit-dot { position: absolute; width: 6px; height: 6px; border-radius: 50%; background: #b3b3b3; z-index: 1; animation: dot-drift 6s ease-in-out infinite; }
+.dot-one { left: 18%; top: 14%; }
+.dot-two { right: 12%; bottom: 26%; width: 4px; height: 4px; animation-delay: -3s; }
+.slip-position { position: absolute; width: 324px; }
+.slip-position-back { width: 290px; left: 13%; top: 17%; transform: rotate(-12deg); }
+.slip-position-front { left: 17%; top: 27%; transform: rotate(-3deg); animation: slip-appear .9s cubic-bezier(.2,.8,.2,1) both; }
+.browser-slip { border: 1px solid #e0e0e0; border-radius: 15px; background: #fff; box-shadow: 0 14px 35px #3f3f3f0a, 0 30px 60px #2b2b2b10; }
+.slip-back { background: #eee; height: 150px; opacity: .8; animation: slip-float 10s -4s ease-in-out infinite; }
+.slip-back > span { font: 12px var(--mono); color: #676767; display: block; padding: 22px; text-decoration: line-through; }
+.slip-front { animation: slip-float 8s ease-in-out infinite; }
+.slip-chrome { display: flex; align-items: center; gap: 5px; padding: 12px 13px; border-bottom: 1px solid #eee; }
+.slip-chrome > i { width: 5px; height: 5px; background: #d8d8d8; border-radius: 50%; }
+.slip-chrome > span { color: #686868; font-size: 11px; margin-left: 24px; letter-spacing: .04em; }
+.slip-chrome > svg { margin-left: auto; color: #707070; }
+.slip-body { padding: 22px 22px 24px; }
+.slip-brand { display: flex; align-items: baseline; gap: 12px; font-size: 32px; font-weight: 750; color: #373737; letter-spacing: -.025em; }
+.slip-brand > span { font: 500 10px var(--mono); letter-spacing: .12em; color: #777; }
+.slip-address { display: block; margin-top: 16px; font: 13px/1.5 var(--mono); color: #686868; white-space: nowrap; }
+.slip-address strong { color: #353535; font-weight: 600; }
+.slip-skeleton { display: flex; flex-direction: column; gap: 7px; margin-top: 22px; }
+.slip-skeleton i { height: 5px; border-radius: 3px; background: #eee; width: 77%; }
+.slip-skeleton i:nth-child(2) { width: 49%; }
+.magnifier-position { position: absolute; left: 57%; top: 36%; width: 150px; height: 180px; transform: rotate(-22deg); animation: lens-appear .85s .12s cubic-bezier(.2,.8,.2,1) both; }
+.magnifier { position: relative; width: 100%; height: 100%; animation: lens-scan 9s -2s ease-in-out infinite; }
+.magnifier-glass { width: 120px; height: 120px; border: 9px solid #414141; border-radius: 50%; background: linear-gradient(145deg, #fcfcfce8, #ececece6); box-shadow: 0 1px 0 2px #636363, inset 0 0 0 2px #fff, 5px 10px 24px #27272720; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: #575757; }
+.magnifier-glass > svg { transform: rotate(22deg); }
+.magnifier-glass > span { font: 600 21px var(--mono); letter-spacing: -.06em; transform: rotate(22deg); }
+.magnifier > i { position: absolute; background: linear-gradient(90deg, #383838, #5b5b5b, #3a3a3a); width: 26px; height: 76px; border-radius: 5px 5px 10px 10px; left: 47px; top: 113px; box-shadow: 3px 7px 9px #2c2c2c14; }
+.verified-position { position: absolute; left: 20%; top: 76%; transform: rotate(4deg); }
+.verified-sticker { padding: 12px 16px; background: #373737; color: #f7f7f7; box-shadow: 0 7px 18px #2f2f2f15; border-radius: 30px; display: flex; align-items: center; gap: 9px; font-size: 12px; letter-spacing: .04em; animation: sticker-float 10s -3s ease-in-out infinite; }
+.verified-sticker > svg:last-child { margin-left: 4px; opacity: .7; }
+
+/* Only transform/opacity change in idle animations; content and layout stay still. */
+@keyframes slip-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@keyframes lens-scan { 0%, 100% { transform: translate(0, 0) rotate(0); } 50% { transform: translate(4px, -6px) rotate(2deg); } }
+@keyframes sticker-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3px); } }
+@keyframes orbit-drift { to { transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes dot-drift { 0%, 100% { transform: translateY(0); opacity: .55; } 50% { transform: translateY(-4px); opacity: 1; } }
+@keyframes slip-appear { from { opacity: 0; transform: rotate(-8deg) translateY(20px); } to { opacity: 1; transform: rotate(-3deg); } }
+@keyframes lens-appear { from { opacity: 0; transform: rotate(-32deg) translate(18px, 12px); } to { opacity: 1; transform: rotate(-22deg); } }
+
+.app-shell:has(dialog[open]) .hero-visual * { animation-play-state: paused; }
+@media (max-width: 1000px) and (min-width: 701px) {
+  .hero-visual { transform: scale(.83) translate(-10px, -10px); transform-origin: center; }
+}
+@media (max-width: 700px) {
+  .hero-visual { order: 4; height: 188px; width: 340px; max-width: 100%; align-self: center; transform: none; margin: 6px 0 12px; }
+  .orbit-outer { width: 206px; height: 206px; }
+  .orbit-inner { width: 160px; height: 160px; }
+  .dot-one { top: 7%; left: 23%; }
+  .dot-two { bottom: 12%; right: 16%; }
+  .slip-position { width: 236px; }
+  .slip-position-back { width: 211px; left: 9%; top: 11%; }
+  .slip-position-front { left: 14%; top: 18%; }
+  .browser-slip { border-radius: 11px; }
+  .slip-back { height: 105px; }
+  .slip-back > span { font-size: 10px; padding: 14px; }
+  .slip-chrome { padding: 8px 10px; gap: 4px; }
+  .slip-chrome i { width: 4px; height: 4px; }
+  .slip-chrome > span { font-size: 10px; margin-left: 17px; }
+  .slip-chrome svg { width: 11px; height: 11px; }
+  .slip-body { padding: 13px 16px 17px; }
+  .slip-brand { font-size: 23px; gap: 9px; }
+  .slip-brand > span { font-size: 9px; }
+  .slip-address { font-size: 11px; margin-top: 8px; }
+  .slip-skeleton { gap: 5px; margin-top: 12px; }
+  .slip-skeleton i { height: 3px; }
+  .magnifier-position { left: 53%; top: 28%; transform: rotate(-22deg) scale(.64); transform-origin: top left; animation: none; }
+  .verified-position { top: 82%; left: 16%; }
+  .verified-sticker { padding: 8px 11px; font-size: 10px; gap: 6px; }
+  .verified-sticker svg { width: 15px; height: 15px; }
+  .verified-sticker > svg:last-child { width: 12px; height: 12px; }
+}
+@media (max-height: 740px) and (max-width: 700px) {
+  .hero-visual { height: 160px; margin-top: 2px; margin-bottom: 12px; }
+  .slip-position-front { top: 10%; }
+  .slip-position-back { top: 0; }
+  .magnifier-position { top: 20%; }
+  .verified-position { top: 83%; }
+  .orbit-outer { width: 180px; height: 180px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual, .hero-visual * { animation: none !important; }
+}

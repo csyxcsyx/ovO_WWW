@@ -1,0 +1,2245 @@
+[
+  {
+    "id": "site-001",
+    "name": "微信",
+    "category": "社交与社区",
+    "url": "https://weixin.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://weixin.qq.com/",
+      "status": 200,
+      "title": "微信，是一个生活方式",
+      "finalUrl": "https://weixin.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-002",
+    "name": "QQ",
+    "category": "社交与社区",
+    "url": "https://im.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://im.qq.com/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://im.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-003",
+    "name": "QQ邮箱",
+    "category": "社交与社区",
+    "url": "https://mail.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://mail.qq.com/",
+      "status": 200,
+      "title": "登录QQ邮箱",
+      "finalUrl": "https://mail.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-005",
+    "name": "腾讯网",
+    "category": "社交与社区",
+    "url": "https://qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://qq.com/",
+      "status": 200,
+      "title": "腾讯网",
+      "finalUrl": "https://www.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-006",
+    "name": "微博",
+    "category": "社交与社区",
+    "url": "https://weibo.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://weibo.com/",
+      "status": 200,
+      "title": "Sina Visitor System",
+      "finalUrl": "https://passport.weibo.com/visitor/visitor?entry=miniblog&a=enter&url=https%3A%2F%2Fweibo.com%2F&domain=weibo.com&ua=Mozilla%2F5.0%20OfficialInspector-SourceCheck%2F1.0&_rand=1792328475694&sudaref=",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-007",
+    "name": "小红书",
+    "category": "社交与社区",
+    "url": "https://xiaohongshu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://xiaohongshu.com/",
+      "status": 200,
+      "title": "小红书 - 你的生活兴趣社区",
+      "finalUrl": "https://www.xiaohongshu.com/login?redirectPath=http%3A%2F%2Fwww.xiaohongshu.com%2Fexplore%3FexSource%3Dnull",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-008",
+    "name": "知乎",
+    "category": "社交与社区",
+    "url": "https://zhihu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://zhihu.com/",
+      "status": 200,
+      "title": "知乎 - 有问题，就会有答案",
+      "finalUrl": "https://www.zhihu.com/signin?next=%2F",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-009",
+    "name": "哔哩哔哩",
+    "category": "社交与社区",
+    "url": "https://bilibili.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://bilibili.com/",
+      "status": 200,
+      "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+      "finalUrl": "https://www.bilibili.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-010",
+    "name": "豆瓣",
+    "category": "社交与社区",
+    "url": "https://douban.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://douban.com/",
+      "status": 200,
+      "title": "豆瓣",
+      "finalUrl": "https://www.douban.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-011",
+    "name": "百度贴吧",
+    "category": "社交与社区",
+    "url": "https://tieba.baidu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://tieba.baidu.com/",
+      "status": 200,
+      "title": "百度贴吧",
+      "finalUrl": "https://tieba.baidu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-012",
+    "name": "抖音",
+    "category": "社交与社区",
+    "url": "https://douyin.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://douyin.com/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://www.douyin.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-013",
+    "name": "快手",
+    "category": "社交与社区",
+    "url": "https://kuaishou.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://kuaishou.com/",
+      "status": 200,
+      "title": "快手",
+      "finalUrl": "https://www.kuaishou.com/new-reco",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-014",
+    "name": "今日头条",
+    "category": "社交与社区",
+    "url": "https://toutiao.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://toutiao.com/",
+      "status": 200,
+      "title": "今日头条",
+      "finalUrl": "https://www.toutiao.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-015",
+    "name": "网易门户",
+    "category": "社交与社区",
+    "url": "https://163.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://163.com/",
+      "status": 200,
+      "title": "网易",
+      "finalUrl": "http://www.163.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-016",
+    "name": "新浪网",
+    "category": "社交与社区",
+    "url": "https://sina.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://sina.com.cn/",
+      "status": 200,
+      "title": "新浪网",
+      "finalUrl": "https://www.sina.com.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-017",
+    "name": "搜狐网",
+    "category": "社交与社区",
+    "url": "https://sohu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://sohu.com/",
+      "status": 200,
+      "title": "搜狐",
+      "finalUrl": "https://www.sohu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-018",
+    "name": "凤凰网",
+    "category": "社交与社区",
+    "url": "https://ifeng.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://ifeng.com/",
+      "status": 200,
+      "title": "凤凰网",
+      "finalUrl": "https://www.ifeng.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-019",
+    "name": "虎扑",
+    "category": "社交与社区",
+    "url": "https://hupu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://hupu.com/",
+      "status": 200,
+      "title": "虎扑体育-虎扑网",
+      "finalUrl": "https://www.hupu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-033",
+    "name": "百度百科",
+    "category": "社交与社区",
+    "url": "https://baike.baidu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://baike.baidu.com/",
+      "status": 200,
+      "title": "百度百科_全球领先的中文百科全书",
+      "finalUrl": "https://baike.baidu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-034",
+    "name": "百度知道",
+    "category": "社交与社区",
+    "url": "https://zhidao.baidu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://zhidao.baidu.com/",
+      "status": 200,
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "finalUrl": "https://zhidao.baidu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-040",
+    "name": "淘宝",
+    "category": "电商与生活消费",
+    "url": "https://taobao.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://taobao.com/",
+      "status": 200,
+      "title": "淘宝",
+      "finalUrl": "https://www.taobao.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-041",
+    "name": "天猫",
+    "category": "电商与生活消费",
+    "url": "https://tmall.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://tmall.com/",
+      "status": 200,
+      "title": "天猫Tmall.com - 买正品上天猫就购了",
+      "finalUrl": "https://www.tmall.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-042",
+    "name": "京东",
+    "category": "电商与生活消费",
+    "url": "https://jd.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://jd.com/",
+      "status": 200,
+      "title": "京东(JD.COM)-正品低价、品质保障、配送及时、轻松购物！",
+      "finalUrl": "https://www.jd.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-043",
+    "name": "拼多多",
+    "category": "电商与生活消费",
+    "url": "https://pinduoduo.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://pinduoduo.com/",
+      "status": 200,
+      "title": "拼多多 新电商开创者",
+      "finalUrl": "https://pinduoduo.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-044",
+    "name": "闲鱼",
+    "category": "电商与生活消费",
+    "url": "https://goofish.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://goofish.com/",
+      "status": 200,
+      "title": "闲鱼 - 闲不住？上闲鱼！",
+      "finalUrl": "https://www.goofish.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-045",
+    "name": "1688",
+    "category": "电商与生活消费",
+    "url": "https://1688.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://1688.com/",
+      "status": 200,
+      "title": "阿里1688首页",
+      "finalUrl": "https://www.1688.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-048",
+    "name": "唯品会",
+    "category": "电商与生活消费",
+    "url": "https://vip.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://vip.com/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://www.vip.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-049",
+    "name": "苏宁易购",
+    "category": "电商与生活消费",
+    "url": "https://suning.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://suning.com/",
+      "status": 0,
+      "title": "",
+      "finalUrl": "https://suning.com/",
+      "checkedAt": "2026-10-18",
+      "error": "fetch failed"
+    }
+  },
+  {
+    "id": "site-052",
+    "name": "什么值得买",
+    "category": "电商与生活消费",
+    "url": "https://smzdm.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://smzdm.com/",
+      "status": 200,
+      "title": "什么值得买 | 我们的兴趣消费指南",
+      "finalUrl": "https://www.smzdm.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-053",
+    "name": "美团",
+    "category": "电商与生活消费",
+    "url": "https://meituan.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://meituan.com/",
+      "status": 200,
+      "title": "美团 - 帮大家吃得更好，生活更好",
+      "finalUrl": "https://www.meituan.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-054",
+    "name": "大众点评",
+    "category": "电商与生活消费",
+    "url": "https://dianping.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://dianping.com/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://www.dianping.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-055",
+    "name": "饿了么",
+    "category": "电商与生活消费",
+    "url": "https://ele.me/",
+    "domestic": true,
+    "source": {
+      "url": "https://ele.me/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://taobaoshangou.ele.me/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-062",
+    "name": "小米有品",
+    "category": "电商与生活消费",
+    "url": "https://xiaomiyoupin.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://xiaomiyoupin.com/",
+      "status": 200,
+      "title": "小米有品",
+      "finalUrl": "https://xiaomiyoupin.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-064",
+    "name": "顺丰速运",
+    "category": "电商与生活消费",
+    "url": "https://www.sf-express.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.sf-express.com/",
+      "finalUrl": "https://www.sf-express.com/",
+      "status": 200,
+      "title": "",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-072",
+    "name": "菜鸟速递",
+    "category": "电商与生活消费",
+    "url": "https://express.cainiao.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://express.cainiao.com/",
+      "status": 200,
+      "title": "&#x83dc;&#x9e1f;&#x901f;&#x9012;&#x5b98;&#x7f51;-&#x83dc;&#x9e1f;&#x81ea;&#x8425;&#xff0c;&#x54c1;&#x8d28;&#x5feb;&#x9012;&#xff0c;&#x597d;&#x7528;&#x4e0d;&#x8d35;",
+      "finalUrl": "https://express.cainiao.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-073",
+    "name": "爱奇艺",
+    "category": "影音阅读与新闻",
+    "url": "https://iqiyi.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://iqiyi.com/",
+      "status": 200,
+      "title": "爱奇艺 iQIYI-热门独播剧集在线观看",
+      "finalUrl": "https://www.iqiyi.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-074",
+    "name": "腾讯视频",
+    "category": "影音阅读与新闻",
+    "url": "https://v.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://v.qq.com/",
+      "status": 200,
+      "title": "腾讯视频-中国领先的在线视频媒体平台，海量高清视频在线观看",
+      "finalUrl": "https://v.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-075",
+    "name": "优酷",
+    "category": "影音阅读与新闻",
+    "url": "https://youku.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://youku.com/",
+      "status": 200,
+      "title": "优酷-热门独播剧集综艺电影在线观看-为好内容全力以赴",
+      "finalUrl": "https://www.youku.com/ku/webhome",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-076",
+    "name": "芒果TV",
+    "category": "影音阅读与新闻",
+    "url": "https://mgtv.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://mgtv.com/",
+      "status": 200,
+      "title": "芒果TV-天生青春",
+      "finalUrl": "https://www.mgtv.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-082",
+    "name": "网易云音乐",
+    "category": "影音阅读与新闻",
+    "url": "https://music.163.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://music.163.com/",
+      "status": 200,
+      "title": "网易云音乐",
+      "finalUrl": "https://music.163.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-083",
+    "name": "QQ音乐",
+    "category": "影音阅读与新闻",
+    "url": "https://y.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://y.qq.com/",
+      "status": 200,
+      "title": "QQ音乐-千万正版音乐海量无损曲库新歌热歌天天畅听的高品质音乐平台！",
+      "finalUrl": "https://y.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-084",
+    "name": "酷狗音乐",
+    "category": "影音阅读与新闻",
+    "url": "https://kugou.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://kugou.com/",
+      "status": 200,
+      "title": "酷狗音乐 - 就是歌多！小说相声也很多！",
+      "finalUrl": "https://www.kugou.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-085",
+    "name": "酷我音乐",
+    "category": "影音阅读与新闻",
+    "url": "https://kuwo.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://kuwo.cn/",
+      "status": 200,
+      "title": "酷我音乐-无损音质正版在线试听网站",
+      "finalUrl": "https://kuwo.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-086",
+    "name": "喜马拉雅",
+    "category": "影音阅读与新闻",
+    "url": "https://ximalaya.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://ximalaya.com/",
+      "status": 200,
+      "title": "喜马拉雅-国内专业音频分享平台,随时随地,听我想听！",
+      "finalUrl": "https://www.ximalaya.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-087",
+    "name": "番茄小说",
+    "category": "影音阅读与新闻",
+    "url": "https://fanqienovel.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://fanqienovel.com/",
+      "status": 200,
+      "title": "小说,番茄小说网_好看的小说尽在番茄小说官网",
+      "finalUrl": "https://fanqienovel.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-088",
+    "name": "起点中文网",
+    "category": "影音阅读与新闻",
+    "url": "https://qidian.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://qidian.com/",
+      "status": 202,
+      "title": "",
+      "finalUrl": "https://www.qidian.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-089",
+    "name": "晋江文学城",
+    "category": "影音阅读与新闻",
+    "url": "https://jjwxc.net/",
+    "domestic": true,
+    "source": {
+      "url": "https://jjwxc.net/",
+      "status": 200,
+      "title": "������ѧ��",
+      "finalUrl": "https://www.jjwxc.net/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-091",
+    "name": "掌阅",
+    "category": "影音阅读与新闻",
+    "url": "https://ireader.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://ireader.com/",
+      "status": 202,
+      "title": "",
+      "finalUrl": "https://www.ireader.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-092",
+    "name": "微信读书",
+    "category": "影音阅读与新闻",
+    "url": "https://weread.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://weread.qq.com/",
+      "status": 200,
+      "title": "微信读书",
+      "finalUrl": "https://weread.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-095",
+    "name": "央视网",
+    "category": "影音阅读与新闻",
+    "url": "https://cctv.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://cctv.com/",
+      "status": 200,
+      "title": "央视网_世界就在眼前",
+      "finalUrl": "https://www.cctv.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-096",
+    "name": "人民网",
+    "category": "影音阅读与新闻",
+    "url": "https://people.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://people.com.cn/",
+      "status": 200,
+      "title": "人民网_网上的人民日报",
+      "finalUrl": "https://www.people.com.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-097",
+    "name": "新华网",
+    "category": "影音阅读与新闻",
+    "url": "https://xinhuanet.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://xinhuanet.com/",
+      "status": 200,
+      "title": "新华网_让新闻离你更近",
+      "finalUrl": "https://www.xinhuanet.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-099",
+    "name": "澎湃新闻",
+    "category": "影音阅读与新闻",
+    "url": "https://thepaper.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://thepaper.cn/",
+      "status": 200,
+      "title": "澎湃新闻-专注时政与思想-ThePaper.cn",
+      "finalUrl": "https://www.thepaper.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-100",
+    "name": "界面新闻",
+    "category": "影音阅读与新闻",
+    "url": "https://jiemian.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://jiemian.com/",
+      "status": 200,
+      "title": "界面新闻-只服务于独立思考的人群-Jiemian.com",
+      "finalUrl": "https://www.jiemian.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-102",
+    "name": "36氪",
+    "category": "影音阅读与新闻",
+    "url": "https://36kr.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://36kr.com/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://36kr.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-103",
+    "name": "虎嗅",
+    "category": "影音阅读与新闻",
+    "url": "https://huxiu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://huxiu.com/",
+      "status": 200,
+      "title": "虎嗅网",
+      "finalUrl": "https://www.huxiu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-107",
+    "name": "IT之家",
+    "category": "影音阅读与新闻",
+    "url": "https://ithome.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://ithome.com/",
+      "status": 200,
+      "title": "IT之家",
+      "finalUrl": "https://www.ithome.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-108",
+    "name": "中关村在线",
+    "category": "影音阅读与新闻",
+    "url": "https://zol.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://zol.com.cn/",
+      "status": 200,
+      "title": "�йش����� - ���л���רҵIT��վ - The valuable and professional IT business website in Greater China",
+      "finalUrl": "https://www.zol.com.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-109",
+    "name": "太平洋科技",
+    "category": "影音阅读与新闻",
+    "url": "https://pconline.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://pconline.com.cn/",
+      "status": 200,
+      "title": "̫ƽ��Ƽ�_רҵIT�Ż���վ",
+      "finalUrl": "https://www.pconline.com.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-110",
+    "name": "快科技",
+    "category": "影音阅读与新闻",
+    "url": "https://mydrivers.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://mydrivers.com/",
+      "status": 200,
+      "title": "快科技--科技改变未来",
+      "finalUrl": "https://www.mydrivers.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-111",
+    "name": "爱范儿",
+    "category": "影音阅读与新闻",
+    "url": "https://ifanr.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://ifanr.com/",
+      "status": 200,
+      "title": "爱范儿",
+      "finalUrl": "https://www.ifanr.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-112",
+    "name": "少数派",
+    "category": "影音阅读与新闻",
+    "url": "https://sspai.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://sspai.com/",
+      "status": 200,
+      "title": "少数派 - 高效工作，品质生活",
+      "finalUrl": "https://sspai.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-118",
+    "name": "华为",
+    "category": "硬件科技与互联网",
+    "url": "https://huawei.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://huawei.com/",
+      "status": 200,
+      "title": "Huawei - Building a Fully Connected, Intelligent World",
+      "finalUrl": "https://www.huawei.com/en/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-119",
+    "name": "小米",
+    "category": "硬件科技与互联网",
+    "url": "https://mi.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://mi.com/",
+      "status": 200,
+      "title": "Xiaomi官方网站 | 以人为中心，构建“人车家全生态”",
+      "finalUrl": "https://www.mi.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-120",
+    "name": "OPPO",
+    "category": "硬件科技与互联网",
+    "url": "https://oppo.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://oppo.com/",
+      "status": 200,
+      "title": "OPPO Find X10 系列 丨 哈 苏 超 清 原 相 机 | OPPO 官方网站",
+      "finalUrl": "https://www.oppo.com/cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-121",
+    "name": "vivo",
+    "category": "硬件科技与互联网",
+    "url": "https://vivo.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://vivo.com.cn/",
+      "status": 200,
+      "title": "vivo智能手机官方网站 - X500系列 直出电影感",
+      "finalUrl": "https://www.vivo.com.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-122",
+    "name": "荣耀",
+    "category": "硬件科技与互联网",
+    "url": "https://honor.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://honor.com/",
+      "status": 200,
+      "title": "荣耀AI终端-荣耀手机-荣耀Magic9系列 | 荣耀官网",
+      "finalUrl": "https://www.honor.com/cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-123",
+    "name": "一加",
+    "category": "硬件科技与互联网",
+    "url": "https://oneplus.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://oneplus.com/",
+      "status": 200,
+      "title": "一加手机官网 - 一加 16",
+      "finalUrl": "https://www.oneplus.com/cn",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-126",
+    "name": "联想中国",
+    "category": "硬件科技与互联网",
+    "url": "https://www.lenovo.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.lenovo.com.cn/",
+      "finalUrl": "https://www.lenovo.com.cn/",
+      "status": 200,
+      "title": "联想_lenovo笔记本电脑_平板电脑_手机_台式机_服务器_外设数码_联想官网",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-127",
+    "name": "华硕",
+    "category": "硬件科技与互联网",
+    "url": "https://asus.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://asus.com/",
+      "status": 200,
+      "title": "ASUS Global",
+      "finalUrl": "https://www.asus.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-133",
+    "name": "百度",
+    "category": "硬件科技与互联网",
+    "url": "https://baidu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://baidu.com/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://www.baidu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-134",
+    "name": "腾讯公司",
+    "category": "硬件科技与互联网",
+    "url": "https://www.tencent.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.tencent.com/",
+      "finalUrl": "https://www.tencent.com/",
+      "status": 200,
+      "title": "Home - Tencent",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-135",
+    "name": "阿里云",
+    "category": "硬件科技与互联网",
+    "url": "https://aliyun.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://aliyun.com/",
+      "status": 200,
+      "title": "阿里云-计算，为了无法计算的价值",
+      "finalUrl": "https://www.aliyun.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-136",
+    "name": "腾讯云",
+    "category": "硬件科技与互联网",
+    "url": "https://cloud.tencent.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://cloud.tencent.com/",
+      "status": 200,
+      "title": "腾讯云 产业智变·云启未来 - 腾讯",
+      "finalUrl": "https://cloud.tencent.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-137",
+    "name": "华为云",
+    "category": "硬件科技与互联网",
+    "url": "https://huaweicloud.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://huaweicloud.com/",
+      "status": 200,
+      "title": "华为云，用AI解行业难题-华为云",
+      "finalUrl": "https://www.huaweicloud.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-144",
+    "name": "大疆",
+    "category": "硬件科技与互联网",
+    "url": "https://dji.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://dji.com/",
+      "status": 200,
+      "title": "DJI 大疆创新 - 官方网站",
+      "finalUrl": "https://www.dji.com/cn",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-145",
+    "name": "网易公司",
+    "category": "硬件科技与互联网",
+    "url": "https://netease.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://netease.com/",
+      "status": 0,
+      "title": "",
+      "finalUrl": "https://netease.com/",
+      "checkedAt": "2026-10-18",
+      "error": "fetch failed"
+    }
+  },
+  {
+    "id": "site-146",
+    "name": "百度网盘",
+    "category": "硬件科技与互联网",
+    "url": "https://pan.baidu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://pan.baidu.com/",
+      "status": 200,
+      "title": "百度网盘-免费云盘丨文件共享软件丨超大容量丨存储安全",
+      "finalUrl": "https://pan.baidu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-147",
+    "name": "百度文库",
+    "category": "硬件科技与互联网",
+    "url": "https://wenku.baidu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://wenku.baidu.com/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://wenku.baidu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-156",
+    "name": "京东云",
+    "category": "硬件科技与互联网",
+    "url": "https://jdcloud.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://jdcloud.com/",
+      "status": 200,
+      "title": "京东云",
+      "finalUrl": "https://www.jdcloud.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-157",
+    "name": "DeepSeek",
+    "category": "AI与办公软件",
+    "url": "https://deepseek.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://deepseek.com/",
+      "status": 200,
+      "title": "DeepSeek | 深度求索",
+      "finalUrl": "https://www.deepseek.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-158",
+    "name": "豆包",
+    "category": "AI与办公软件",
+    "url": "https://doubao.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://doubao.com/",
+      "status": 200,
+      "title": "豆包 - 字节跳动旗下 AI 智能助手",
+      "finalUrl": "https://www.doubao.com/chat/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-159",
+    "name": "Kimi",
+    "category": "AI与办公软件",
+    "url": "https://kimi.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://kimi.com/",
+      "status": 200,
+      "title": "Kimi AI 官网 - K3 上线，专为智能体编程与知识工作打造",
+      "finalUrl": "https://www.kimi.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-161",
+    "name": "智谱清言",
+    "category": "AI与办公软件",
+    "url": "https://chatglm.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://chatglm.cn/",
+      "status": 200,
+      "title": "智谱清言",
+      "finalUrl": "https://chatglm.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-162",
+    "name": "腾讯元宝",
+    "category": "AI与办公软件",
+    "url": "https://yuanbao.tencent.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://yuanbao.tencent.com/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://yuanbao.tencent.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-163",
+    "name": "讯飞星火",
+    "category": "AI与办公软件",
+    "url": "https://xinghuo.xfyun.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://xinghuo.xfyun.cn/",
+      "status": 200,
+      "title": "讯飞星火-懂我的AI助手",
+      "finalUrl": "https://xinghuo.xfyun.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-172",
+    "name": "WPS",
+    "category": "AI与办公软件",
+    "url": "https://wps.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://wps.cn/",
+      "status": 200,
+      "title": "WPS-支持多人在线协作编辑Word、Excel和PPT文档_WPS官方网站",
+      "finalUrl": "https://www.wps.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-173",
+    "name": "飞书",
+    "category": "AI与办公软件",
+    "url": "https://feishu.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://feishu.cn/",
+      "status": 200,
+      "title": "飞书｜字节跳动旗下AI工作平台 - 飞书官网",
+      "finalUrl": "https://www.feishu.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-174",
+    "name": "钉钉",
+    "category": "AI与办公软件",
+    "url": "https://dingtalk.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://dingtalk.com/",
+      "status": 200,
+      "title": "钉钉，AI时代工作方式",
+      "finalUrl": "https://www.dingtalk.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-176",
+    "name": "腾讯文档",
+    "category": "AI与办公软件",
+    "url": "https://docs.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://docs.qq.com/",
+      "status": 200,
+      "title": "腾讯文档-官方网站-支持多人在线编辑Word、Excel和PPT文档",
+      "finalUrl": "https://docs.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-177",
+    "name": "石墨文档",
+    "category": "AI与办公软件",
+    "url": "https://shimo.im/",
+    "domestic": true,
+    "source": {
+      "url": "https://shimo.im/",
+      "status": 200,
+      "title": "石墨文档官网-在线协同办公系统平台,支持云端多人在线协作文档,表格,幻灯片",
+      "finalUrl": "https://shimo.im/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-178",
+    "name": "语雀",
+    "category": "AI与办公软件",
+    "url": "https://yuque.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://yuque.com/",
+      "status": 200,
+      "title": "语雀，为每一个人提供优秀的文档和知识库工具 · 语雀",
+      "finalUrl": "https://www.yuque.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-184",
+    "name": "腾讯会议",
+    "category": "AI与办公软件",
+    "url": "https://meeting.tencent.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://meeting.tencent.com/",
+      "status": 200,
+      "title": "腾讯会议官方——腾讯会议 会开会",
+      "finalUrl": "https://meeting.tencent.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-185",
+    "name": "金山文档",
+    "category": "AI与办公软件",
+    "url": "https://kdocs.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://kdocs.cn/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://account.kdocs.cn/passport/singlesign?cb=https%3A%2F%2Fwww.kdocs.cn%2F&form=kdocs",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-190",
+    "name": "小黑盒",
+    "category": "游戏平台与社区",
+    "url": "https://xiaoheihe.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://xiaoheihe.cn/",
+      "status": 200,
+      "title": "小黑盒 - 玩家高能聚集地",
+      "finalUrl": "https://xiaoheihe.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-191",
+    "name": "Steam 商店",
+    "category": "游戏平台与社区",
+    "url": "https://store.steampowered.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://store.steampowered.com/",
+      "status": 200,
+      "title": "Welcome to Steam",
+      "finalUrl": "https://store.steampowered.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-192",
+    "name": "Steam 社区",
+    "category": "游戏平台与社区",
+    "url": "https://steamcommunity.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://steamcommunity.com/",
+      "status": 200,
+      "title": "Steam Community",
+      "finalUrl": "https://steamcommunity.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-193",
+    "name": "Epic Games",
+    "category": "游戏平台与社区",
+    "url": "https://epicgames.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://epicgames.com/",
+      "status": 403,
+      "title": "",
+      "finalUrl": "https://www.epicgames.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-194",
+    "name": "WeGame",
+    "category": "游戏平台与社区",
+    "url": "https://wegame.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://wegame.com.cn/",
+      "status": 200,
+      "title": "WeGame - 一起更好玩 WeGame More",
+      "finalUrl": "https://www.wegame.com.cn/home/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-195",
+    "name": "TapTap",
+    "category": "游戏平台与社区",
+    "url": "https://taptap.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://taptap.cn/",
+      "status": 200,
+      "title": "",
+      "finalUrl": "https://www.taptap.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-196",
+    "name": "米哈游",
+    "category": "游戏平台与社区",
+    "url": "https://mihoyo.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://mihoyo.com/",
+      "status": 200,
+      "title": "米哈游-TECH OTAKUS SAVE THE WORLD",
+      "finalUrl": "https://www.mihoyo.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-198",
+    "name": "网易游戏",
+    "category": "游戏平台与社区",
+    "url": "https://game.163.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://game.163.com/",
+      "status": 200,
+      "title": "������Ϸ����_��Ϸ�Ȱ���",
+      "finalUrl": "https://game.163.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-199",
+    "name": "腾讯游戏",
+    "category": "游戏平台与社区",
+    "url": "https://game.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://game.qq.com/",
+      "status": 200,
+      "title": "Spark More��ȥ���֣����޿���--��Ѷ��Ϸ�ٷ���վ",
+      "finalUrl": "https://game.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-200",
+    "name": "4399小游戏",
+    "category": "游戏平台与社区",
+    "url": "https://4399.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://4399.com/",
+      "status": 200,
+      "title": "С��Ϸ,4399С��Ϸ,С��Ϸ��ȫ,˫��С��Ϸ��ȫ - www.4399.com",
+      "finalUrl": "https://www.4399.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-201",
+    "name": "7k7k小游戏",
+    "category": "游戏平台与社区",
+    "url": "https://7k7k.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://7k7k.com/",
+      "status": 200,
+      "title": "小游戏,7k7k小游戏,双人小游戏大全免费在线玩 - www.7k7k.com",
+      "finalUrl": "https://www.7k7k.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-202",
+    "name": "3DM游戏网",
+    "category": "游戏平台与社区",
+    "url": "https://3dmgame.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://3dmgame.com/",
+      "status": 200,
+      "title": "单机游戏_单机游戏下载_单机游戏大全中文版下载_3DM游戏网",
+      "finalUrl": "https://www.3dmgame.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-203",
+    "name": "游民星空",
+    "category": "游戏平台与社区",
+    "url": "https://gamersky.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://gamersky.com/",
+      "status": 200,
+      "title": "游民星空 - 大型单机游戏门户 提供特色单机游戏资讯、下载",
+      "finalUrl": "https://www.gamersky.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-204",
+    "name": "17173游戏网",
+    "category": "游戏平台与社区",
+    "url": "https://17173.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://17173.com/",
+      "status": 200,
+      "title": "17173网络游戏门户站",
+      "finalUrl": "https://www.17173.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-205",
+    "name": "游侠网",
+    "category": "游戏平台与社区",
+    "url": "https://ali213.net/",
+    "domestic": true,
+    "source": {
+      "url": "https://ali213.net/",
+      "status": 200,
+      "title": "单机游戏_单机游戏下载_单机游戏门户_游侠网",
+      "finalUrl": "https://www.ali213.net/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-209",
+    "name": "育碧 Ubisoft",
+    "category": "游戏平台与社区",
+    "url": "https://ubisoft.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://ubisoft.com/",
+      "status": 200,
+      "title": "Ubisoft",
+      "finalUrl": "https://www.ubisoft.com/en-us",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-210",
+    "name": "EA",
+    "category": "游戏平台与社区",
+    "url": "https://ea.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://ea.com/",
+      "status": 200,
+      "title": "Electronic Arts Home Page - Official EA Site",
+      "finalUrl": "https://www.ea.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-211",
+    "name": "Rockstar Games",
+    "category": "游戏平台与社区",
+    "url": "https://rockstargames.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://rockstargames.com/",
+      "status": 200,
+      "title": "Rockstar Games",
+      "finalUrl": "https://www.rockstargames.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-215",
+    "name": "英雄联盟国服",
+    "category": "游戏平台与社区",
+    "url": "https://lol.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://lol.qq.com/",
+      "status": 200,
+      "title": "Ӣ������ȫ�¹ٷ���վ-��Ѷ��Ϸ",
+      "finalUrl": "https://lol.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-216",
+    "name": "Minecraft",
+    "category": "游戏平台与社区",
+    "url": "https://minecraft.net/",
+    "domestic": false,
+    "source": {
+      "url": "https://minecraft.net/",
+      "status": 200,
+      "title": "Welcome to the Minecraft Official Site | Minecraft",
+      "finalUrl": "https://www.minecraft.net/en-us",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-220",
+    "name": "王者荣耀",
+    "category": "游戏平台与社区",
+    "url": "https://pvp.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://pvp.qq.com/",
+      "status": 200,
+      "title": "王者荣耀官方网站-腾讯游戏",
+      "finalUrl": "https://pvp.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-221",
+    "name": "和平精英",
+    "category": "游戏平台与社区",
+    "url": "https://gp.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://gp.qq.com/",
+      "status": 200,
+      "title": "���Ｄս �Լ����-��ƽ��Ӣ-�ٷ���վ-��Ѷ��Ϸ",
+      "finalUrl": "https://gp.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-223",
+    "name": "原神国服",
+    "category": "游戏平台与社区",
+    "url": "https://ys.mihoyo.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://ys.mihoyo.com/",
+      "status": 200,
+      "title": "《原神》官方网站-全新7.1版本「往冥府的安魂歌」上线！",
+      "finalUrl": "https://ys.mihoyo.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-224",
+    "name": "崩坏：星穹铁道国服",
+    "category": "游戏平台与社区",
+    "url": "https://sr.mihoyo.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://sr.mihoyo.com/",
+      "status": 200,
+      "title": "《崩坏：星穹铁道》官方网站-4.6全新版本「月升之前，与兽共舞」正式上线！",
+      "finalUrl": "https://sr.mihoyo.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-225",
+    "name": "绝区零国服",
+    "category": "游戏平台与社区",
+    "url": "https://zzz.mihoyo.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://zzz.mihoyo.com/",
+      "status": 200,
+      "title": "《绝区零》官网-3.2全新版本「她与她的隐秘往事」现已上线！",
+      "finalUrl": "https://zzz.mihoyo.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-226",
+    "name": "机核",
+    "category": "游戏平台与社区",
+    "url": "https://gcores.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://gcores.com/",
+      "status": 200,
+      "title": "机核 GCORES",
+      "finalUrl": "https://www.gcores.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-227",
+    "name": "GOG",
+    "category": "游戏平台与社区",
+    "url": "https://gog.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://gog.com/",
+      "status": 200,
+      "title": "欢迎来到 GOG.com | 最好的 DRM-free 游戏",
+      "finalUrl": "https://www.gog.com/zh/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-228",
+    "name": "三角洲行动",
+    "category": "游戏平台与社区",
+    "url": "https://df.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://df.qq.com/",
+      "status": 200,
+      "title": "����ͬ���棬���������ж�����������ר��ҳ",
+      "finalUrl": "https://df.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-229",
+    "name": "中国铁路12306",
+    "category": "出行与旅游",
+    "url": "https://www.12306.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.12306.cn/",
+      "finalUrl": "https://www.12306.cn/",
+      "status": 200,
+      "title": "中国铁路客户服务中心",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-230",
+    "name": "携程",
+    "category": "出行与旅游",
+    "url": "https://ctrip.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://ctrip.com/",
+      "status": 200,
+      "title": "携程旅行网:酒店预订,机票预订查询,旅游度假,商旅管理",
+      "finalUrl": "https://www.ctrip.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-231",
+    "name": "去哪儿旅行",
+    "category": "出行与旅游",
+    "url": "https://qunar.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://qunar.com/",
+      "status": 200,
+      "title": "【去哪儿网】机票查询预订，酒店预订，旅游团购，度假搜索，门票预订-去哪儿网Qunar.com",
+      "finalUrl": "https://www.qunar.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-232",
+    "name": "飞猪旅行",
+    "category": "出行与旅游",
+    "url": "https://fliggy.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://fliggy.com/",
+      "status": 200,
+      "title": "飞机票查询-机票预订、酒店预订查询、客栈民宿、旅游度假、门票签证【飞猪旅行】",
+      "finalUrl": "https://www.fliggy.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-233",
+    "name": "同程旅行",
+    "category": "出行与旅游",
+    "url": "https://ly.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://ly.com/",
+      "status": 200,
+      "title": "同程旅行_旅游_旅游线路_旅行_出国旅游_自驾游_周边游_旅游网站",
+      "finalUrl": "https://www.ly.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-235",
+    "name": "马蜂窝",
+    "category": "出行与旅游",
+    "url": "https://mafengwo.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://mafengwo.cn/",
+      "status": 202,
+      "title": "",
+      "finalUrl": "https://www.mafengwo.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-237",
+    "name": "高德地图",
+    "category": "出行与旅游",
+    "url": "https://amap.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://amap.com/",
+      "status": 200,
+      "title": "高德地图",
+      "finalUrl": "https://amap.com/?amap_migrate_retry=1",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-238",
+    "name": "百度地图",
+    "category": "出行与旅游",
+    "url": "https://map.baidu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://map.baidu.com/",
+      "status": 200,
+      "title": "百度地图",
+      "finalUrl": "https://map.baidu.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-252",
+    "name": "中国天气网",
+    "category": "出行与旅游",
+    "url": "https://weather.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://weather.com.cn/",
+      "status": 200,
+      "title": "天气网",
+      "finalUrl": "https://www.weather.com.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-254",
+    "name": "中国高等教育学生信息网（学信网）",
+    "category": "教育招聘与开发",
+    "url": "https://www.chsi.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.chsi.com.cn/",
+      "finalUrl": "https://www.chsi.com.cn/",
+      "status": 200,
+      "title": "中国高等教育学生信息网（学信网）",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-256",
+    "name": "中国教育考试网",
+    "category": "教育招聘与开发",
+    "url": "https://www.neea.edu.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.neea.edu.cn/",
+      "finalUrl": "https://www.neea.edu.cn/",
+      "status": 200,
+      "title": "首页 - 中国教育考试网",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-257",
+    "name": "国家中小学智慧教育平台",
+    "category": "教育招聘与开发",
+    "url": "https://basic.smartedu.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://basic.smartedu.cn/",
+      "status": 200,
+      "title": "国家中小学智慧教育平台",
+      "finalUrl": "https://basic.smartedu.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-262",
+    "name": "百度翻译",
+    "category": "教育招聘与开发",
+    "url": "https://fanyi.baidu.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://fanyi.baidu.com/",
+      "status": 200,
+      "title": "百度翻译-您的超级翻译伙伴（文本、文档翻译）",
+      "finalUrl": "https://fanyi.baidu.com/mtpe-individual/multimodal",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-265",
+    "name": "BOSS直聘",
+    "category": "教育招聘与开发",
+    "url": "https://zhipin.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://zhipin.com/",
+      "status": 200,
+      "title": "BOSS直聘-找工作BOSS直聘直接谈！招聘求职找工作！",
+      "finalUrl": "https://www.zhipin.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-266",
+    "name": "智联招聘",
+    "category": "教育招聘与开发",
+    "url": "https://zhaopin.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://zhaopin.com/",
+      "status": 200,
+      "title": "招聘网_人才网_2026年最新招聘信息-智联招聘",
+      "finalUrl": "https://www.zhaopin.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-267",
+    "name": "前程无忧",
+    "category": "教育招聘与开发",
+    "url": "https://51job.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://51job.com/",
+      "status": 200,
+      "title": "招聘网_人才网_找工作_求职_上前程无忧",
+      "finalUrl": "https://51job.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-268",
+    "name": "猎聘",
+    "category": "教育招聘与开发",
+    "url": "https://liepin.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://liepin.com/",
+      "status": 200,
+      "title": "【猎聘】-招聘_找工作_求职_企业招人平台",
+      "finalUrl": "https://www.liepin.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-270",
+    "name": "牛客",
+    "category": "教育招聘与开发",
+    "url": "https://nowcoder.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://nowcoder.com/",
+      "status": 200,
+      "title": "牛客网 - 找工作神器|笔试题库|面试经验|实习招聘内推，求职就业一站解决_牛客网",
+      "finalUrl": "https://www.nowcoder.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-272",
+    "name": "CSDN",
+    "category": "教育招聘与开发",
+    "url": "https://csdn.net/",
+    "domestic": true,
+    "source": {
+      "url": "https://csdn.net/",
+      "status": 200,
+      "title": "CSDN_专业开发者社区",
+      "finalUrl": "https://www.csdn.net/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-273",
+    "name": "稀土掘金",
+    "category": "教育招聘与开发",
+    "url": "https://juejin.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://juejin.cn/",
+      "status": 200,
+      "title": "稀土掘金",
+      "finalUrl": "https://juejin.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-274",
+    "name": "博客园",
+    "category": "教育招聘与开发",
+    "url": "https://cnblogs.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://cnblogs.com/",
+      "status": 200,
+      "title": "博客园 - 开发者的网上家园",
+      "finalUrl": "https://www.cnblogs.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-275",
+    "name": "开源中国",
+    "category": "教育招聘与开发",
+    "url": "https://oschina.net/",
+    "domestic": true,
+    "source": {
+      "url": "https://oschina.net/",
+      "status": 200,
+      "title": "OSCHINA - 开源 × AI · 开发者生态社区",
+      "finalUrl": "https://www.oschina.net/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-276",
+    "name": "Gitee",
+    "category": "教育招聘与开发",
+    "url": "https://gitee.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://gitee.com/",
+      "status": 200,
+      "title": "Gitee - 基于 Git 的代码托管和研发协作平台",
+      "finalUrl": "https://gitee.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-277",
+    "name": "GitHub",
+    "category": "教育招聘与开发",
+    "url": "https://github.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://github.com/",
+      "status": 200,
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub · GitHub",
+      "finalUrl": "https://github.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-280",
+    "name": "MDN Web Docs",
+    "category": "教育招聘与开发",
+    "url": "https://developer.mozilla.org/",
+    "domestic": false,
+    "source": {
+      "url": "https://developer.mozilla.org/",
+      "status": 200,
+      "title": "MDN Web Docs",
+      "finalUrl": "https://developer.mozilla.org/en-US/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-281",
+    "name": "Python",
+    "category": "教育招聘与开发",
+    "url": "https://python.org/",
+    "domestic": false,
+    "source": {
+      "url": "https://python.org/",
+      "status": 200,
+      "title": "Welcome to Python.org",
+      "finalUrl": "https://www.python.org/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-283",
+    "name": "npm",
+    "category": "教育招聘与开发",
+    "url": "https://npmjs.com/",
+    "domestic": false,
+    "source": {
+      "url": "https://npmjs.com/",
+      "status": 403,
+      "title": "Just a moment...",
+      "finalUrl": "https://www.npmjs.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-285",
+    "name": "React",
+    "category": "教育招聘与开发",
+    "url": "https://react.dev/",
+    "domestic": false,
+    "source": {
+      "url": "https://react.dev/",
+      "status": 200,
+      "title": "React",
+      "finalUrl": "https://react.dev/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-286",
+    "name": "Vue.js",
+    "category": "教育招聘与开发",
+    "url": "https://vuejs.org/",
+    "domestic": false,
+    "source": {
+      "url": "https://vuejs.org/",
+      "status": 200,
+      "title": "Vue.js - The Progressive JavaScript Framework | Vue.js",
+      "finalUrl": "https://vuejs.org/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-287",
+    "name": "研究生招生信息网（研招网）",
+    "category": "教育招聘与开发",
+    "url": "https://yz.chsi.com.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://yz.chsi.com.cn/",
+      "status": 200,
+      "title": "中国研究生招生信息网",
+      "finalUrl": "https://yz.chsi.com.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-288",
+    "name": "清华大学",
+    "category": "教育招聘与开发",
+    "url": "https://www.tsinghua.edu.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.tsinghua.edu.cn/",
+      "finalUrl": "https://www.tsinghua.edu.cn/",
+      "status": 200,
+      "title": "清华大学",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-289",
+    "name": "北京大学",
+    "category": "教育招聘与开发",
+    "url": "https://www.pku.edu.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.pku.edu.cn/",
+      "finalUrl": "https://www.pku.edu.cn/",
+      "status": 200,
+      "title": "北京大学",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-290",
+    "name": "复旦大学",
+    "category": "教育招聘与开发",
+    "url": "https://fudan.edu.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://fudan.edu.cn/",
+      "status": 200,
+      "title": "复旦大学 Fudan University",
+      "finalUrl": "https://fudan.edu.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-291",
+    "name": "中国科学院",
+    "category": "教育招聘与开发",
+    "url": "https://cas.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://cas.cn/",
+      "status": 200,
+      "title": "中国科学院",
+      "finalUrl": "https://www.cas.cn/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-292",
+    "name": "中国国家图书馆",
+    "category": "教育招聘与开发",
+    "url": "https://nlc.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://nlc.cn/",
+      "status": 0,
+      "title": "",
+      "finalUrl": "https://nlc.cn/",
+      "checkedAt": "2026-10-18",
+      "error": "fetch failed"
+    }
+  },
+  {
+    "id": "site-294",
+    "name": "支付宝",
+    "category": "金融支付与公共服务",
+    "url": "https://alipay.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://alipay.com/",
+      "status": 200,
+      "title": "支付宝",
+      "finalUrl": "https://www.alipay.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-295",
+    "name": "微信支付",
+    "category": "金融支付与公共服务",
+    "url": "https://pay.weixin.qq.com/",
+    "domestic": true,
+    "source": {
+      "url": "https://pay.weixin.qq.com/",
+      "status": 200,
+      "title": "微信支付 - 中国领先的第三方支付平台 ｜ 微信支付提供安全快捷的支付方式",
+      "finalUrl": "https://pay.weixin.qq.com/",
+      "checkedAt": "2026-10-18"
+    }
+  },
+  {
+    "id": "site-318",
+    "name": "中国政府网",
+    "category": "金融支付与公共服务",
+    "url": "https://www.gov.cn/",
+    "domestic": true,
+    "source": {
+      "url": "https://www.gov.cn/",
+      "finalUrl": "https://www.gov.cn/",
+      "status": 200,
+      "title": "中国政府网_中央人民政府门户网站",
+      "checkedAt": "2026-10-18"
+    }
+  }
+]

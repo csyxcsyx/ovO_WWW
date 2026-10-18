@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.hb-sdk/
+coverage/
+output/
+*.local
+*.log

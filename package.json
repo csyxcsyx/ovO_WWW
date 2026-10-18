@@ -1,0 +1,50 @@
+{
+  "name": "official-inspector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "heybox": {
+    "miniProgramId": "",
+    "name": "官网鉴定局",
+    "desc": "你常逛的网站，真的认得吗？在限时竞速与生存挑战中，找出真正的官网入口。",
+    "category": "game",
+    "icon": "assets/icon.png",
+    "coverImages": ["assets/cover.png"],
+    "platforms": ["android", "ios", "ohos", "windows", "macos"],
+    "permissions": {
+      "storage": { "enabled": true },
+      "leaderboard": { "enabled": true },
+      "share": { "enabled": true }
+    },
+    "window": { "defaultWidth": 1060, "defaultHeight": 820, "minWidth": 360, "minHeight": 600, "resizable": true }
+  },
+  "scripts": {
+    "hb-sdk": "hb-sdk",
+    "dev": "hb-sdk dev",
+    "build": "tsc --noEmit && hb-sdk build",
+    "preview": "vite preview --host 127.0.0.1",
+    "dev:web": "vite --config vite.web.config.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "validate:questions": "tsx scripts/validate-questions.ts",
+    "import:questions": "node scripts/import-questions.mjs",
+    "assets": "node scripts/create-assets.mjs"
+  },
+  "dependencies": {
+    "@heybox/hb-sdk": "0.9.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "lucide-react": "^1.59.0"
+  },
+  "devDependencies": {
+    "vite": "^8.3.4",
+    "@vitejs/plugin-react": "latest",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/node": "^24",
+    "typescript": "^5.9",
+    "vitest": "latest",
+    "tsx": "^4",
+    "sharp": "^0.34"
+  }
+}

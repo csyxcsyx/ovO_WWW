@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>官网鉴定局 · 本地布局验收</title>
+<style>body{margin:0;background:#ddd;font:14px system-ui;color:#333}header{height:45px;display:flex;align-items:center;justify-content:center;gap:12px}a{color:inherit}iframe{display:block;border:0;margin:0 auto;background:#f7f7f7;box-shadow:0 0 0 1px #bbb}p{margin:0}</style></head>
+<body><header><span>本地布局验收</span><a href="?width=360">360</a><a href="?width=390">390</a><a href="?width=430">430</a><a href="?width=1024">桌面</a></header><iframe title="游戏界面"></iframe>
+<script type="module">
+  const width = Number(new URL(location.href).searchParams.get('width'));
+  const frame = document.querySelector('iframe');
+  frame.width = [360,390,430,1024].includes(width) ? width : 390;
+  frame.height = 660;
+  frame.src = './';
+</script></body></html>
