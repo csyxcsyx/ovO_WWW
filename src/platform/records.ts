@@ -19,6 +19,10 @@ export function addResult(data: SavedData, result: GameResult): SavedData {
   return { ...data, best: { ...data.best, [result.mode]: Math.max(data.best[result.mode], result.score) },
     recent: [summary, ...data.recent.filter(r => r.id !== result.id)].slice(0, 20) };
 }
+export function recordResult(data: SavedData, result: GameResult) {
+  if (data.recent.some(item => item.id === result.id)) return { data, isNewBest: false, added: false };
+  return { data: addResult(data, result), isNewBest: result.score > data.best[result.mode], added: true };
+}
 export function mergeSavedData(local: SavedData, host: SavedData): SavedData {
   const recent = [...new Map([...host.recent, ...local.recent].map(r => [r.id, r])).values()].sort((a,b) => b.finishedAt - a.finishedAt).slice(0,20);
   return { version: 1, mode: local.mode, best: { sprint: Math.max(local.best.sprint, host.best.sprint), survival: Math.max(local.best.survival, host.best.survival) }, recent };

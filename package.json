@@ -1,22 +1,45 @@
 {
   "name": "official-inspector",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "private": true,
   "type": "module",
   "heybox": {
-    "miniProgramId": "",
+    "miniProgramId": "01a14e14-fb33-72f0-9a30-99e098952ab3",
     "name": "官网鉴定局",
     "desc": "你常逛的网站，真的认得吗？在限时竞速与生存挑战中，找出真正的官网入口。",
     "category": "game",
     "icon": "assets/icon.png",
-    "coverImages": ["assets/cover.png"],
-    "platforms": ["android", "ios", "ohos", "windows", "macos"],
+    "coverImages": [
+      "assets/cover.png"
+    ],
+    "platforms": [
+      "android",
+      "ios",
+      "ohos",
+      "windows",
+      "macos"
+    ],
     "permissions": {
-      "storage": { "enabled": true },
-      "leaderboard": { "enabled": true },
-      "share": { "enabled": true }
+      "userInfo": {
+        "enabled": true
+      },
+      "storage": {
+        "enabled": true
+      },
+      "leaderboard": {
+        "enabled": true
+      },
+      "share": {
+        "enabled": true
+      }
     },
-    "window": { "defaultWidth": 1060, "defaultHeight": 820, "minWidth": 360, "minHeight": 600, "resizable": true }
+    "window": {
+      "defaultWidth": 1060,
+      "defaultHeight": 820,
+      "minWidth": 360,
+      "minHeight": 600,
+      "resizable": true
+    }
   },
   "scripts": {
     "hb-sdk": "hb-sdk",

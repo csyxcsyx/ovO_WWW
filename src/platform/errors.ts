@@ -24,3 +24,10 @@ export function friendlyError(error: unknown): FriendlyError {
     retryAfterMs: limited ? Math.max(30000, Number.isFinite(delay) && delay > 0 ? delay : 60000) : 0 };
 }
 export const isUnsupported = (error: unknown) => ['METHOD_FORBIDDEN', 'METHOD_NOT_FOUND', 'REQUEST_UNSUPPORTED'].includes(friendlyError(error).code);
+export function leaderboardError(error: unknown, operation: 'list' | 'personal' | 'submit'): FriendlyError {
+  const issue = friendlyError(error);
+  if (issue.code !== 'UNAUTHORIZED') return issue;
+  return { ...issue, message: operation === 'list'
+    ? '榜单连接暂不可用，请稍后刷新。'
+    : '小黑盒登录状态暂未连接，请返回客户端后重试。' };
+}

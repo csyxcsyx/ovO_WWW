@@ -1,5 +1,5 @@
 import { questions } from '../data/questions';
-import type { Difficulty, GameResult, GameState, Mode, Question } from './types';
+import type { AnswerIntent, Difficulty, GameResult, GameState, Mode, Question } from './types';
 
 export const FEEDBACK_MS = 650;
 export const SPRINT_MS = 60_000;
@@ -26,9 +26,9 @@ export function pickQuestion(answered: number, asked: string[], recentSites: str
   if (!candidates.length) throw new Error('题库中缺少当前难度的题目');
   return candidates[Math.floor(random() * candidates.length)];
 }
-export function startGame(mode: Mode, now: number, random: Random = Math.random): GameState {
+export function startGame(mode: Mode, now: number, random: Random = Math.random, runId = `${mode}-${now}`): GameState {
   const question = pickQuestion(0, [], [], random);
-  return { mode, phase: 'playing', question, choices: shuffle(question.choices, random), history: [],
+  return { runId, questionSequence: 0, mode, phase: 'playing', question, choices: shuffle(question.choices, random), history: [],
     startedAt: now, questionStartedAt: now, deadline: now + (mode === 'sprint' ? SPRINT_MS : QUESTION_MS),
     feedbackUntil: 0, score: 0, correct: 0, mistakes: 0, streak: 0, maxStreak: 0, recentSites: [question.siteId], asked: [question.id] };
 }
@@ -54,6 +54,11 @@ export function answer(state: GameState, choiceId: string | null, now: number): 
   if (state.mode === 'sprint' && deadline <= now) return finishGame(next, now);
   return next;
 }
+// A queued input belongs to one particular presentation, even if a question recurs.
+export function answerTurn(state: GameState, intent: AnswerIntent, now: number): GameState {
+  if (intent.runId !== state.runId || intent.questionSequence !== state.questionSequence) return state;
+  return answer(state, intent.choiceId, now);
+}
 export function tick(state: GameState, now: number, visible: boolean, random: Random = Math.random): GameState {
   if (state.phase === 'finished') return state;
   if (state.mode === 'sprint' && now >= state.deadline) {
@@ -66,7 +71,7 @@ export function tick(state: GameState, now: number, visible: boolean, random: Ra
   if (state.phase === 'feedback' && now >= state.feedbackUntil && visible) {
     if (state.mode === 'survival' && state.mistakes >= 3) return finishGame(state, now);
     const question = pickQuestion(state.history.length, state.asked, state.recentSites, random);
-    return { ...state, phase: 'playing', question, choices: shuffle(question.choices, random),
+    return { ...state, phase: 'playing', questionSequence: state.questionSequence + 1, question, choices: shuffle(question.choices, random),
       questionStartedAt: now, deadline: state.mode === 'survival' ? now + QUESTION_MS : state.deadline,
       asked: [...state.asked, question.id], recentSites: [...state.recentSites, question.siteId] };
   }
@@ -74,7 +79,7 @@ export function tick(state: GameState, now: number, visible: boolean, random: Ra
 }
 export function resultFrom(state: GameState): GameResult {
   if (state.phase !== 'finished') throw new Error('对局尚未结束');
-  return { id: `${state.startedAt}-${state.mode}`, mode: state.mode, score: state.score,
+  return { id: state.runId, mode: state.mode, score: state.score,
     correct: state.correct, total: state.history.length, maxStreak: state.maxStreak,
     durationMs: Math.max(0, (state.finishedAt ?? state.deadline) - state.startedAt),
     finishedAt: state.finishedAt ?? state.deadline, history: state.history };

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { addResult, loadLocalData, mergeSavedData, parseSavedData, persistLocalData, type SavedData } from '../platform/records';
+import { recordResult, loadLocalData, mergeSavedData, parseSavedData, persistLocalData, type SavedData } from '../platform/records';
 import { readHostStorage, writeHostStorage } from '../platform/heybox';
 import type { GameResult, Mode } from '../game/types';
 
@@ -32,5 +32,9 @@ export function useRecords(ready: boolean) {
     }
   }, [data, ready, hostLoaded]);
   return { data, storageError, setMode: (mode: Mode) => update({ ...current.current, mode }),
-    save: useCallback((result: GameResult) => update(addResult(current.current, result)), [update]) };
+    save: useCallback((result: GameResult) => {
+      const saved = recordResult(current.current, result);
+      if (saved.added) update(saved.data);
+      return saved;
+    }, [update]) };
 }

@@ -3,9 +3,10 @@ import { sites, questions } from '../data/questions';
 import type { Mode } from '../game/types';
 import { ModeSwitch } from './ModeSwitch';
 import { HeroVisual } from './HeroVisual';
+import { AuxiliaryNav } from './AuxiliaryNav';
 
-interface Props { mode: Mode; best: number; onMode: (mode: Mode) => void; onStart: () => void; onRanking: () => void }
-export function Home({ mode, best, onMode, onStart, onRanking }: Props) {
+interface Props { mode: Mode; best: number; onMode: (mode: Mode) => void; onStart: () => void; onRanking: () => void; onRecords: () => void; onRules: () => void }
+export function Home({ mode, best, onMode, onStart, onRanking, onRecords, onRules }: Props) {
   return <main className="home enter">
     <section className="home-intro">
       <div className="eyebrow"><span className="status-dot" />一场关于网址的眼力挑战</div>
@@ -22,6 +23,7 @@ export function Home({ mode, best, onMode, onStart, onRanking }: Props) {
     </section>
     <HeroVisual />
     <footer className="home-footer">
+      <AuxiliaryNav onRecords={onRecords} onRanking={onRanking} onRules={onRules} />
       <div className="bank-stats"><span><Globe2 size={17} aria-hidden="true" /><strong>{sites.length}</strong> 个网站</span><span><Layers3 size={17} aria-hidden="true" /><strong>{questions.length}</strong> 道题目</span></div>
       <p>从日常冲浪，到游戏江湖。</p>
     </footer>

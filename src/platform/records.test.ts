@@ -1,9 +1,19 @@
 import { describe, expect, it } from 'vitest';
-import { addResult, emptyData, mergeSavedData, parseSavedData } from './records';
-import { friendlyError } from './errors';
+import { addResult, emptyData, mergeSavedData, parseSavedData, recordResult } from './records';
+import { friendlyError, leaderboardError } from './errors';
 import type { GameResult } from '../game/types';
 const result = (id: number, score = id): GameResult => ({ id: String(id), mode: 'sprint', score, correct: 1, total: 2, maxStreak: 1, durationMs: 60000, finishedAt: id, history: [] });
 describe('bounded personal records', () => {
+  it('atomically identifies only the first positive score and later improvements as new records', () => {
+    const zero = recordResult(emptyData(), result(0, 0));
+    expect(zero.isNewBest).toBe(false);
+    const first = recordResult(zero.data, result(1, 100));
+    expect(first.isNewBest).toBe(true);
+    expect(recordResult(first.data, result(1, 100)).added).toBe(false);
+    expect(recordResult(first.data, result(2, 100)).isNewBest).toBe(false);
+    expect(recordResult(first.data, result(3, 50)).isNewBest).toBe(false);
+    expect(recordResult(first.data, result(4, 200)).isNewBest).toBe(true);
+  });
   it('defaults safely for absent, corrupt or incompatible data', () => {
     for (const value of [undefined, null, 'oops', {}, {version:2}]) expect(parseSavedData(value)).toEqual(emptyData());
   });
@@ -27,6 +37,10 @@ describe('bounded personal records', () => {
   });
 });
 describe('recoverable platform failures', () => {
+  it('does not describe a public leaderboard failure as a login requirement', () => {
+    expect(leaderboardError({code:'UNAUTHORIZED'}, 'list').message).not.toContain('登录');
+    expect(leaderboardError({code:'UNAUTHORIZED'}, 'personal').message).toContain('登录状态');
+  });
   it('distinguishes authentication, missing boards and unsupported clients', () => {
     expect(friendlyError({code:'UNAUTHORIZED'}).message).toContain('登录');
     expect(friendlyError({code:'LEADERBOARD_NOT_FOUND'}).message).toContain('尚未开通');

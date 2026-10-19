@@ -15,12 +15,14 @@ export interface AnswerRecord {
   questionId: string; choiceId: string | null; correct: boolean; elapsedMs: number;
 }
 export interface GameState {
+  runId: string; questionSequence: number;
   mode: Mode; phase: 'playing' | 'feedback' | 'finished';
   question: Question; choices: Choice[]; history: AnswerRecord[];
   startedAt: number; questionStartedAt: number; deadline: number; feedbackUntil: number;
   finishedAt?: number; score: number; correct: number; mistakes: number;
   streak: number; maxStreak: number; recentSites: string[]; asked: string[];
 }
+export interface AnswerIntent { runId: string; questionSequence: number; choiceId: string }
 export interface GameResult {
   id: string; mode: Mode; score: number; correct: number; total: number;
   maxStreak: number; durationMs: number; finishedAt: number; history: AnswerRecord[];

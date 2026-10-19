@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { answer, difficultyAt, FEEDBACK_MS, pickQuestion, resultFrom, shuffle, startGame, tick } from './engine';
+import { answer, answerTurn, difficultyAt, FEEDBACK_MS, pickQuestion, resultFrom, shuffle, startGame, tick } from './engine';
+import { secondsLeft } from '../components/GameClock';
 import { questions } from '../data/questions';
 import type { GameState } from './types';
 
@@ -11,6 +12,27 @@ const advance = (state: GameState, correct = true) => {
   return tick(feedback, time + FEEDBACK_MS, true, random);
 };
 describe('deadline-based game', () => {
+  it('rejects events from a previous run or a previous presentation of the same question', () => {
+    const state = startGame('sprint', 0, random, 'run-2');
+    const intent = {runId: 'run-1', questionSequence: 0, choiceId: state.question.correctId};
+    expect(answerTurn(state, intent, 100)).toBe(state);
+    const repeated = {...state, questionSequence: 4};
+    expect(answerTurn(repeated, {...intent, runId: 'run-2'}, 100)).toBe(repeated);
+    expect(answerTurn(repeated, {...intent, runId: 'run-2', questionSequence: 4}, 100).correct).toBe(1);
+  });
+  it('rapid wrong inputs deduct time only once and correct inputs never shorten the deadline', () => {
+    const state = startGame('sprint', 0, random);
+    const intent = {runId: state.runId, questionSequence: 0, choiceId: state.choices.find(c => c.id !== state.question.correctId)!.id};
+    let next = state;
+    for (let i=0;i<30;i++) next = answerTurn(next, intent, 38300 + i);
+    expect(next.deadline).toBe(57000); expect(next.history).toHaveLength(1);
+    expect(secondsLeft(state.deadline, 38000)).toBe(22);
+    expect(secondsLeft(next.deadline, 39000)).toBe(18);
+    expect(answer(state, state.question.correctId, 38300).deadline).toBe(60000);
+  });
+  it('renders whole seconds from the deadline without negative values', () => {
+    expect([0, 1, 999, 1000, 59999, 60000, 90000].map(now => secondsLeft(60000, now))).toEqual([60,60,60,59,1,0,0]);
+  });
   it('uses independent mode deadlines', () => {
     expect(startGame('sprint', 100).deadline).toBe(60100);
     expect(startGame('survival', 100).deadline).toBe(12100);
