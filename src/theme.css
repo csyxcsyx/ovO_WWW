@@ -27,7 +27,6 @@ code, kbd { font-family: var(--mono); }
 .site-header nav { display: flex; gap: 6px; }
 .site-header nav button { display: flex; align-items: center; gap: 7px; background: #efefef; border-radius: 30px; padding: 0 15px; min-height: 48px; font-size: 13px; }
 .site-header nav button:hover { background: #e4e4e4; }
-.header-playing { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; }
 .status-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: currentColor; box-shadow: 0 0 0 4px #e7e7e7; flex-shrink: 0; }
 .eyebrow { display: flex; align-items: center; gap: 12px; font-size: 12px; letter-spacing: .08em; color: #656565; }
 .button-primary, .button-soft, .button-quiet { display: inline-flex; justify-content: center; align-items: center; gap: 10px; min-height: 48px; padding: 12px 18px; border-radius: 13px; font-size: 14px; font-weight: 550; }
@@ -63,12 +62,10 @@ code, kbd { font-family: var(--mono); }
 .bank-stats strong { color: #494949; font: 500 13px var(--mono); }
 .game-page { max-width: 650px; margin: 45px auto 0; }
 .game-topline { display: flex; align-items: center; justify-content: space-between; }
-.game-topline .button-quiet { margin-left: -10px; font-size: 12px; }
 .mode-label { display: flex; align-items: center; gap: 6px; color: #707070; font-size: 12px; }
 .game-status { display: flex; align-items: flex-end; justify-content: space-between; margin: 23px 0 13px; }
 .timer-display { display: flex; align-items: baseline; gap: 7px; font-size: 13px; color: #707070; }
 .timer-number { font: 500 62px/.95 var(--mono); color: var(--ink); font-variant-numeric: tabular-nums; letter-spacing: -.06em; }
-.timer-urgent .timer-number { animation: urgent-pulse .75s ease-in-out infinite alternate; }
 .game-stat-right { display: flex; flex-direction: column; align-items: flex-end; gap: 9px; padding-bottom: 2px; }
 .stat-label { font-size: 12px; color: var(--muted); }
 .game-score { font: 500 30px/1 var(--mono); letter-spacing: -.06em; }
@@ -143,7 +140,6 @@ dialog { color: var(--ink); }
 .record-list li > div > strong, .ranking-list li > div > strong { font-size: 14px; font-weight: 550; display: block; }
 .record-list li > div > span, .ranking-list li > div > span { font-size: 12px; color: #686868; display: block; margin-top: 6px; }
 .record-list b, .ranking-list b { font: 500 21px var(--mono); letter-spacing: -.06em; }
-.decorative-arrow { display: none; }
 .footnote { font-size: 12px; line-height: 1.9; margin-top: 23px; color: #686868; }
 .my-ranking { display: flex; align-items: center; gap: 11px; background: #eaeaea; border-radius: 13px; padding: 16px; margin-top: 23px; color: #5d5d5d; }
 .my-ranking > span { font-size: 12px; color: #686868; flex: 1; }
@@ -177,14 +173,6 @@ dialog { color: var(--ink); }
 .receipt-watermark-space { height: 65px; }
 .result-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 22px; }
 .result-actions > button { min-height: 53px; }
-.result-secondary { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
-.result-secondary .button-quiet { font-size: 11px; padding: 10px 8px; }
-.result-platform-note { text-align: center; color: #686868; font-size: 12px; line-height: 1.8; margin-top: 8px; }
-.review-toggle-row { display: flex; align-items: center; justify-content: space-between; margin-top: 23px; padding-top: 14px; border-top: 1px solid var(--line); }
-.review-toggle { display: flex; align-items: center; min-height: 48px; gap: 9px; background: #eeeeee; border-radius: 10px; font-size: 13px; padding: 10px 13px; }
-.review-toggle > span { color: #707070; font: 11px var(--mono); }
-.review-toggle svg { transition: transform .2s; }
-.rotate { transform: rotate(180deg); }
 .review-section { margin-top: 16px; }
 .review-item { border-bottom: 1px solid #e1e1e1; }
 .review-item > summary { list-style: none; display: flex; align-items: center; gap: 12px; padding: 18px 4px; cursor: pointer; min-height: 60px; }
@@ -204,7 +192,6 @@ mark { background: #dbdbdb; color: #313131; border-radius: 3px; padding: 1px 0; 
 .review-choice > p { font-size: 13px; color: #626262; line-height: 1.8; margin-top: 7px; }
 .review-insight { font-size: 14px; line-height: 1.8; color: #626262; padding: 10px 3px; }
 .review-source { font-size: 12px; line-height: 1.85; color: #686868; overflow-wrap: anywhere; }
-.result-home { display: flex; margin: 20px auto 0; font-size: 12px; }
 .countdown-overlay { position: fixed; inset: 0; z-index: 20; background: #f7f7f7f5; backdrop-filter: blur(12px); width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; }
 .countdown-overlay::backdrop { background: transparent; }
 .countdown-overlay > div { display: flex; min-height: 100%; flex-direction: column; justify-content: center; align-items: center; gap: 15px; }
@@ -227,7 +214,6 @@ mark { background: #dbdbdb; color: #313131; border-radius: 3px; padding: 1px 0; 
 @keyframes question-in { from { opacity: .3; transform: translateY(5px); } to { opacity: 1; transform: none; } }
 @keyframes fade-in { from { opacity: .3; } to { opacity: 1; } }
 @keyframes feedback-pop { from { opacity: .4; transform: translateY(3px) scale(.97); } to { opacity: 1; transform: none; } }
-@keyframes urgent-pulse { to { opacity: .5; } }
 @keyframes dialog-in { from { opacity: 0; transform: translateY(10px) scale(.985); } to { opacity: 1; transform: none; } }
 @keyframes countdown-number { from { opacity: .3; transform: scale(.85); } to { opacity: 1; transform: scale(1); } }
 @media (min-width: 1450px) { .home { min-height: min(800px, calc(100dvh - 160px)); } }
@@ -249,7 +235,6 @@ mark { background: #dbdbdb; color: #313131; border-radius: 3px; padding: 1px 0; 
   .site-header nav button { background: transparent; flex-direction: column; gap: 2px; padding: 4px 7px; min-height: 48px; min-width: 48px; font-size: 12px; line-height: 1.3; border-radius: 11px; color: #5d5d5d; }
   .site-header nav button:hover { background: #dedede; }
   .site-header nav svg { width: 18px; height: 18px; }
-  .header-playing { font-size: 12px; }
   .home { display: flex; flex-direction: column; align-items: stretch; padding-top: 27px; min-height: auto; }
   .home-intro { display: contents; }
   .home-intro > .eyebrow { order: 1; font-size: 12px; letter-spacing: .04em; gap: 10px; }
@@ -304,9 +289,6 @@ mark { background: #dbdbdb; color: #313131; border-radius: 3px; padding: 1px 0; 
   .receipt-stats { padding-top: 20px; }
   .receipt-stats strong { font-size: 22px; }
   .result-actions { margin-top: 18px; }
-  .result-secondary { gap: 3px; margin-top: 10px; }
-  .result-secondary .button-quiet { font-size: 13px; padding-left: 6px; padding-right: 6px; gap: 6px; }
-  .review-toggle-row { margin-top: 19px; }
   .record-list li { gap: 9px; }
 }
 @media (max-width: 374px) {

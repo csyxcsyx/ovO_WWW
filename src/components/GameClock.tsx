@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-
-export const secondsLeft = (deadline: number, now: number) => Math.max(0, Math.ceil((deadline - now) / 1000));
+import { secondsLeft } from '../game/engine';
 
 export function GameClock({ deadline, limit, penalty }: { deadline: number; limit: number; penalty: boolean }) {
   const [seconds, setSeconds] = useState(() => secondsLeft(deadline, Date.now()));

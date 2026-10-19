@@ -4,6 +4,7 @@ import type { AnswerIntent, Difficulty, GameResult, GameState, Mode, Question } 
 export const FEEDBACK_MS = 650;
 export const SPRINT_MS = 60_000;
 export const QUESTION_MS = 12_000;
+export const secondsLeft = (deadline: number, now: number) => Math.max(0, Math.ceil((deadline - now) / 1000));
 export type Random = () => number;
 export function shuffle<T>(items: readonly T[], random: Random = Math.random): T[] {
   const next = [...items];

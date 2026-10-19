@@ -1,6 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { answer, answerTurn, difficultyAt, FEEDBACK_MS, pickQuestion, resultFrom, shuffle, startGame, tick } from './engine';
-import { secondsLeft } from '../components/GameClock';
+import { answer, answerTurn, difficultyAt, FEEDBACK_MS, pickQuestion, resultFrom, secondsLeft, shuffle, startGame, tick } from './engine';
 import { questions } from '../data/questions';
 import type { GameState } from './types';
 
