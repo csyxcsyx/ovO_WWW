@@ -2,6 +2,7 @@ import hbSDK, { type LeaderboardEntry, type MiniProgramSDKHandshakeState } from 
 import type { GameResult, Mode } from '../game/types';
 import { friendlyError, isUnsupported } from './errors';
 import { readPlayerProfile, type CurrentPlayer } from './playerProfile';
+import type { ScoreCandidate } from './scoreCandidate';
 
 export type { LeaderboardEntry, MiniProgramSDKHandshakeState };
 export const BOARD_KEYS: Record<Mode, string> = { sprint: 'official_sprint_v1', survival: 'official_survival_v1' };
@@ -18,13 +19,14 @@ function invalidateBoard(mode?: Mode) {
   boardListeners.forEach(listener => listener(mode));
 }
 let identityRevision = 0;
+export const getIdentityRevision = () => identityRevision;
 let profileRequest: Promise<CurrentPlayer | undefined> | undefined;
 let profileExpires = 0;
 hbSDK.on('heybox_app_login_change', () => {
   identityRevision++; profileRequest = undefined; profileExpires = 0;
   invalidateBoard();
 });
-async function cloudCall<T>(scope: string, load: () => Promise<T>): Promise<T> {
+export async function cloudCall<T>(scope: string, load: () => Promise<T>): Promise<T> {
   const retryAt = Math.max(cloudCooldown.get(scope) ?? 0, cloudCooldown.get('runtime') ?? 0);
   if (Date.now() < retryAt) throw { code: 'RATE_LIMITED_BY_RUNTIME', data: { retryAfterMs: retryAt - Date.now() } };
   try { return await load(); }
@@ -43,8 +45,8 @@ function sharedRead<T>(key: string, scope: string, load: () => Promise<T>): Prom
   pendingReads.set(key, pending); return pending;
 }
 let unloaded = false;
-hbSDK.on('unload', () => { unloaded = true; });
-function requireHost() {
+hbSDK.on('unload', () => { unloaded = true; identityRevision++; profileRequest = undefined; });
+export function requireHost() {
   if (unloaded) throw { code: 'RUNTIME_UNLOADED' };
   if (hbSDK.getHandshakeState().status !== 'ready') throw { code: 'LOCAL_PREVIEW' };
 }
@@ -79,16 +81,18 @@ export async function getCurrentPlayer(): Promise<CurrentPlayer | undefined> {
   }).catch(() => undefined);
   return profileRequest;
 }
-export async function submitResult(result: GameResult) {
+export async function submitResult(result: ScoreCandidate | GameResult, owner?: string) {
   requireHost();
   const revision = identityRevision;
   const player = await getCurrentPlayer();
   // A profile read introduces an await before submit; do not transfer a score
   // queued by the previous account to the newly logged-in account.
   if (revision !== identityRevision) throw { code: 'AUTHORIZATION_CONTEXT_CHANGED' };
+  if (owner && player && player.appUserId !== owner) throw { code: 'AUTHORIZATION_CONTEXT_CHANGED' };
   requireHost();
   const entry = await cloudCall(`submit:${result.mode}`, () => hbSDK.cloud.leaderboard.submit({ key: BOARD_KEYS[result.mode], score: result.score,
-    extra: { correct: result.correct, total: result.total, maxStreak: result.maxStreak, rules: 1,
+    extra: { ...(result.correct !== undefined && result.total !== undefined && result.maxStreak !== undefined
+      ? { correct: result.correct, total: result.total, maxStreak: result.maxStreak } : {}), rules: 1,
       ...(player && (player.profile.nickname || player.profile.avatar) ? { playerProfile: player.profile } : {}) } }));
   invalidateBoard(result.mode);
   return entry;

@@ -53,6 +53,18 @@ describe('SDK adapter contracts', () => {
     sdk.user.getInfo.mockResolvedValue({...account,authorization:{identity:'granted',profile:'denied'}});
     await expect(getCurrentPlayer()).resolves.toEqual({appUserId:'isolated-player',profile:{nickname:'',avatar:''}});
   });
+  it('refuses an explicitly mismatched outbox owner', async () => {
+    sdk.user.getInfo.mockResolvedValue(account);
+    await expect(submitResult({id:'restore',mode:'survival',score:7},'another-account')).rejects.toMatchObject({code:'AUTHORIZATION_CONTEXT_CHANGED'});
+    expect(sdk.cloud.leaderboard.submit).not.toHaveBeenCalled();
+  });
+  it('does not make optional profile failure a score gate for an already bound session', async () => {
+    sdk.user.getInfo.mockRejectedValueOnce({code:'REQUEST_FAILED'});
+    sdk.cloud.leaderboard.submit.mockResolvedValue({score:5});
+    await expect(submitResult({id:'current-run',mode:'survival',score:5},'known-session-owner')).resolves.toMatchObject({score:5});
+    expect(sdk.cloud.leaderboard.submit.mock.calls[0][0]).toMatchObject({key:'official_survival_v1',score:5,extra:{rules:1}});
+    expect(sdk.cloud.leaderboard.submit.mock.calls[0][0].extra).not.toHaveProperty('correct');
+  });
   it('does not send platform requests while SDK is unavailable', async () => {
     sdk.getHandshakeState.mockReturnValue({status:'failed'});
     await expect(getBoard('sprint')).rejects.toMatchObject({code:'LOCAL_PREVIEW'});

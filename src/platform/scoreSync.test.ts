@@ -13,6 +13,29 @@ function deferred<T>() {
   return {promise, resolve, reject};
 }
 describe('session score synchronization', () => {
+  it('keeps the candidate when a malformed descending-board response loses its score', async () => {
+    const submit = vi.fn().mockResolvedValue(entry(2)); const sync = new ScoreSync(submit);
+    sync.setReady(true); sync.enqueue(result(5,'survival'));
+    await vi.waitFor(()=>expect(sync.getSnapshot().survival?.status).toBe('error'));
+    expect(sync.exportPending()[0].candidate.score).toBe(5);
+  });
+  it('retries the retained higher score when a later survival run ties or scores lower', async () => {
+    const submit = vi.fn().mockRejectedValueOnce({code:'REQUEST_FAILED'}).mockResolvedValue(entry(9));
+    const sync = new ScoreSync(submit); sync.setReady(true);
+    sync.enqueue(result(9,'survival','failed'));
+    await vi.waitFor(()=>expect(sync.getSnapshot().survival?.status).toBe('error'));
+    sync.enqueue(result(3,'survival','later-run'));
+    await vi.waitFor(()=>expect(sync.getSnapshot().survival?.status).toBe('synced'));
+    expect(submit.mock.calls.map(call=>call[0].score)).toEqual([9,9]);
+    expect(sync.getSnapshot().survival?.resultId).toBe('later-run');
+  });
+  it('marks lower or tied runs covered only after the platform has confirmed a best', async () => {
+    const submit = vi.fn().mockResolvedValue(entry(9));
+    const sync = new ScoreSync(submit); sync.setReady(true); sync.enqueue(result(3,'survival','first'));
+    await vi.waitFor(()=>expect(sync.getSnapshot().survival?.status).toBe('synced'));
+    sync.enqueue(result(2,'survival','next')); sync.enqueue(result(9,'survival','tie'));
+    expect(submit).toHaveBeenCalledTimes(1); expect(sync.getSnapshot().survival?.resultId).toBe('tie');
+  });
   it('waits for the bridge and deduplicates repeat completion effects', async () => {
     const submit = vi.fn().mockResolvedValue(entry(100));
     const sync = new ScoreSync(submit);

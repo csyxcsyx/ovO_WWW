@@ -1,12 +1,12 @@
 import type { Mode } from '../game/types';
 import type { LeaderboardEntry } from '../platform/heybox';
-import { playerPresentation, type CurrentPlayer } from '../platform/playerProfile';
+import { playerPresentation, type CurrentPlayer, type PlayerProfile } from '../platform/playerProfile';
 import { PlayerAvatar } from './PlayerAvatar';
 
-export function RankingRow({ entry, current, isMine, mode }: {
-  entry: LeaderboardEntry; current?: CurrentPlayer; isMine: boolean; mode: Mode;
+export function RankingRow({ entry, current, profile, isMine, mode }: {
+  entry: LeaderboardEntry; current?: CurrentPlayer; profile?: PlayerProfile; isMine: boolean; mode: Mode;
 }) {
-  const player = playerPresentation(entry, current);
+  const player = playerPresentation(entry, current, profile);
   const self = isMine || player.self;
   return <li className={self ? 'ranking-self' : ''}>
     <span className={`rank-number ${entry.ranked && entry.rank > 0 && entry.rank <= 3 ? 'rank-top' : ''}`}>{entry.ranked && entry.rank > 0 ? String(entry.rank).padStart(2, '0') : '—'}</span>

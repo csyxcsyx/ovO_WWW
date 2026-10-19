@@ -17,8 +17,8 @@ export function readPlayerProfile(value: unknown): PlayerProfile | undefined {
   return nickname || avatar ? { nickname, avatar } : undefined;
 }
 
-export function playerPresentation(entry: { appUserId: string; extra: Record<string, unknown> }, current?: CurrentPlayer) {
+export function playerPresentation(entry: { appUserId: string; extra: Record<string, unknown> }, current?: CurrentPlayer, directory?: PlayerProfile) {
   const self = current?.appUserId === entry.appUserId;
-  const profile = self ? current.profile : readPlayerProfile(entry.extra.playerProfile);
+  const profile = (self && readPlayerProfile(current.profile)) || directory || readPlayerProfile(entry.extra.playerProfile);
   return { self, nickname: profile?.nickname || (self ? '我' : `鉴定员 · ${entry.appUserId.slice(-4)}`), avatar: profile?.avatar || '' };
 }
