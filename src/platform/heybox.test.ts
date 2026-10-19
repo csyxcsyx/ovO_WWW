@@ -109,6 +109,15 @@ describe('SDK adapter contracts', () => {
     expect(entry.score).toBe(900);
     expect(sdk.cloud.leaderboard.submit.mock.calls[0][0]).not.toHaveProperty('appUserId');
   });
+  it('rejects a submitted response from the previous account before updating presentation caches', async () => {
+    let finish!: (value: unknown) => void;
+    sdk.cloud.leaderboard.submit.mockImplementationOnce(() => new Promise(resolve => { finish = resolve; }));
+    const pending = submitResult({ id: 'late-submit', mode: 'survival', score: 7 });
+    await vi.waitFor(() => expect(sdk.cloud.leaderboard.submit).toHaveBeenCalledTimes(1));
+    sdk.listeners.get('heybox_app_login_change')?.();
+    finish({ score: 7 });
+    await expect(pending).rejects.toMatchObject({ code: 'AUTHORIZATION_CONTEXT_CHANGED' });
+  });
   it('captures a bounded light receipt and does not infer success from opaque return values', async () => {
     sdk.share.screenshot.mockResolvedValue(undefined);
     await expect(shareResult('sprint',region)).resolves.toBe('screenshot');

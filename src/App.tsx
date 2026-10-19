@@ -29,6 +29,7 @@ export default function App() {
   const [panel, setPanel] = useState<Panel>(null);
   const [countdown, setCountdown] = useState<number | null>(null);
   const [newBest, setNewBest] = useState(false);
+  const rankingScroll = useRef<HTMLDivElement>(null);
   const savedResult = useRef('');
   const countdownMode = useRef(records.data.mode);
   const countdownToken = useRef(0);
@@ -79,7 +80,7 @@ export default function App() {
     {import.meta.env.DEV && <div className="dev-label">开发预览 · {platform.ready ? '平台已连接' : '本地体验'}</div>}
     {panel === 'rules' && <Dialog title="鉴定怎么玩" onClose={() => setPanel(null)}><Rules /></Dialog>}
     {panel === 'records' && <Dialog title="我的鉴定纪录" onClose={() => setPanel(null)}><Records data={records.data} /></Dialog>}
-    {panel === 'ranking' && <Dialog title="眼力排行榜" onClose={() => setPanel(null)}><Leaderboard mode={records.data.mode} onMode={records.setMode} ready={platform.ready} best={records.data.best} sync={sync.states} onRetry={sync.retry} onRecover={sync.enqueue} profileError={sync.profileError} onProfileRetry={() => { void sync.refreshAccount(); }} /></Dialog>}
+    {panel === 'ranking' && <Dialog title="眼力排行榜" contentRef={rankingScroll} onClose={() => setPanel(null)}><Leaderboard mode={records.data.mode} onMode={records.setMode} ready={platform.ready} scrollRef={rankingScroll} best={records.data.best} sync={sync.states} onRetry={sync.retry} onRecover={sync.enqueue} profileError={sync.profileError} onProfileRetry={() => { void sync.refreshAccount(); }} /></Dialog>}
     {panel === 'review' && result && <Dialog title={`本局解析 · ${result.total} 题`} onClose={() => setPanel(null)}><Review history={result.history} /></Dialog>}
     {panel === 'exit' && active && <Dialog title="返回选择模式？" compact onClose={() => setPanel(null)}><p className="dialog-lead">返回后本局不计入纪录，倒计时仍在继续。</p><div className="dialog-actions"><button className="button-soft" onClick={home}>返回首页</button><button className="button-primary" onClick={() => setPanel(null)}>继续鉴定<ArrowRight size={17} aria-hidden="true" /></button></div></Dialog>}
     {countdown !== null && <Countdown value={countdown} onCancel={cancelCountdown} />}

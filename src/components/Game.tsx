@@ -43,7 +43,7 @@ export function Game({ state, choose, onExit, blocked }: Props) {
           {state.choices.map((choice, index) => {
             const correct = feedback && choice.id === state.question.correctId;
             const wrong = feedback && choice.id === last?.choiceId && !last.correct;
-            return <button className={`choice ${correct ? 'choice-correct' : ''} ${wrong ? 'choice-wrong' : ''}`} key={choice.id} disabled={feedback || blocked}
+            return <button className={`choice ${correct ? 'choice-correct' : ''} ${correct && last?.correct ? 'choice-celebrate' : ''} ${wrong ? 'choice-wrong' : ''}`} key={choice.id} disabled={feedback || blocked}
               onPointerDown={() => { pointerTurn.current = turn; }} onPointerCancel={() => { pointerTurn.current = null; }}
               onClick={event => { if (event.detail === 0 || pointerTurn.current === turn) chooseOption(choice.id); pointerTurn.current = null; }}
               aria-label={`选项 ${index + 1}，${choice.url}${correct ? '，正确答案' : wrong ? '，回答错误' : ''}`}>

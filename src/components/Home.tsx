@@ -14,7 +14,7 @@ export function Home({ mode, best, onMode, onStart, onRanking, onRecords, onRule
       <p className="home-description">三个入口，一个真相。<span className="home-description-detail">考验你的互联网直觉。</span></p>
       <div className="home-play">
         <ModeSwitch mode={mode} onChange={onMode} />
-        <div className="mode-rules" key={mode} aria-live="polite">
+        <div className="mode-rules" aria-live="polite">
           {mode === 'sprint' ? <><span><Zap size={15} aria-hidden="true" />限时 60 秒</span><span>答错 −3 秒 · 连击加分</span></> : <><span><Check size={15} aria-hidden="true" />三次机会</span><span>每题 12 秒 · 越答越难</span></>}
         </div>
         <button className="button-primary start-button" onClick={onStart}>开始鉴定<ArrowRight size={21} aria-hidden="true" /></button>

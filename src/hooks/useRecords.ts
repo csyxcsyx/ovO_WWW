@@ -31,7 +31,10 @@ export function useRecords(ready: boolean) {
       sequence.current = sequence.current.catch(() => {}).then(() => writeHostStorage(data)).catch(() => { setStorageError(localSaved.current ? '平台保存失败，本机纪录仍已保留。' : '保存失败，本局成绩仍可查看。'); });
     }
   }, [data, ready, hostLoaded]);
-  return { data, storageError, setMode: (mode: Mode) => update({ ...current.current, mode }),
+  const setMode = useCallback((mode: Mode) => {
+    if (mode !== current.current.mode) update({ ...current.current, mode });
+  }, [update]);
+  return { data, storageError, setMode,
     save: useCallback((result: GameResult) => {
       const saved = recordResult(current.current, result);
       if (saved.added) update(saved.data);

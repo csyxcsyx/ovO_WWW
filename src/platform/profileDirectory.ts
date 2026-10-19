@@ -19,6 +19,12 @@ export class ProfileDirectory {
   constructor(private ports: Ports) {}
   subscribe = (listener: () => void) => { this.listeners.add(listener); return () => { this.listeners.delete(listener); }; };
   private notify() { this.listeners.forEach(listener => listener()); }
+  cached(ids: string[]): Map<string, PlayerProfile> {
+    return Date.now() < this.expires ? new Map(ids.flatMap(id => {
+      const profile = this.profiles.get(id);
+      return profile ? [[id, profile] as const] : [];
+    })) : new Map();
+  }
   reset() {
     this.epoch++; this.profiles.clear(); this.pages.clear(); this.expires = 0;
     this.ownRequest = undefined; this.ownSignature = ''; this.notify();

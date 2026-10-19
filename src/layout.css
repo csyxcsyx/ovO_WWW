@@ -171,3 +171,24 @@ html, body, #root { width: 100%; height: 100%; overflow: hidden; overscroll-beha
 .board-recovery { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; padding: 14px 0; }
 .board-recovery p { font-size: 14px; line-height: 1.6; color: #555; }
 .personal-ranking-note .button-soft { margin: 8px 0 0; }
+
+.leaderboard-content > .mode-switch { position: sticky; top: 0; z-index: 2; box-shadow: 0 -24px 0 var(--paper), 0 8px 0 var(--paper); }
+.board-personal-slot { min-height: 112px; display: flex; align-items: center; }
+.board-personal-slot .my-ranking { width: 100%; margin: 12px 0; }
+.board-personal-placeholder { color: var(--muted); font-size: 13px; line-height: 1.7; padding: 16px 4px; }
+.board-skeleton { min-height: 248px; display: flex; flex-direction: column; gap: 12px; padding: 12px 0; }
+.board-skeleton > span { height: 58px; border-radius: 12px; background: #ebebeb; }
+.board-skeleton > p, .ranking-end { font-size: 13px; color: var(--muted); }
+.ranking-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; min-height: 60px; padding-top: 12px; }
+.board-sentinel { height: 1px; pointer-events: none; }
+
+/* Feedback belongs to the resolved turn, never to pointer or focus state. */
+.choice-celebrate::after, .choice-wrong::after { content: ''; position: absolute; inset: 0; border: 2px solid #7d7d7d; border-radius: inherit; opacity: 0; pointer-events: none; }
+.choice-celebrate::after { animation: correct-ring .3s ease-out; }
+.choice-celebrate .choice-letter > svg { animation: correct-mark .2s ease-out; }
+.choice-wrong::after { animation: wrong-ring .28s ease-out; }
+.choice-wrong .choice-letter > svg { animation: wrong-mark .22s ease-out; }
+@keyframes correct-ring { from { opacity: .8; transform: scale(.99); } to { opacity: 0; transform: scale(1.008); } }
+@keyframes correct-mark { from { transform: scale(.7); opacity: .55; } to { transform: scale(1); opacity: 1; } }
+@keyframes wrong-ring { 0%, 50%, 100% { opacity: 0; transform: scale(1); } 22%, 72% { opacity: .7; transform: scale(1.006); } }
+@keyframes wrong-mark { 0%, 100% { transform: translateX(0); } 30% { transform: translateX(-2px); } 65% { transform: translateX(2px); } }

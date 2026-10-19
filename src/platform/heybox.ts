@@ -12,11 +12,11 @@ export const subscribeUnload = (handler: () => void) => hbSDK.on('unload', handl
 const pendingReads = new Map<string, Promise<unknown>>();
 const cloudCooldown = new Map<string, number>();
 const boardRevisions: Record<Mode, number> = { sprint: 0, survival: 0 };
-const boardListeners = new Set<(mode?: Mode) => void>();
-export const subscribeBoardChange = (listener: (mode?: Mode) => void) => { boardListeners.add(listener); return () => { boardListeners.delete(listener); }; };
-function invalidateBoard(mode?: Mode) {
+const boardListeners = new Set<(mode?: Mode, entry?: LeaderboardEntry) => void>();
+export const subscribeBoardChange = (listener: (mode?: Mode, entry?: LeaderboardEntry) => void) => { boardListeners.add(listener); return () => { boardListeners.delete(listener); }; };
+function invalidateBoard(mode?: Mode, entry?: LeaderboardEntry) {
   for (const key of mode ? [mode] : ['sprint', 'survival'] as const) boardRevisions[key]++;
-  boardListeners.forEach(listener => listener(mode));
+  boardListeners.forEach(listener => listener(mode, entry));
 }
 let identityRevision = 0;
 export const getIdentityRevision = () => identityRevision;
@@ -94,7 +94,8 @@ export async function submitResult(result: ScoreCandidate | GameResult, owner?: 
     extra: { ...(result.correct !== undefined && result.total !== undefined && result.maxStreak !== undefined
       ? { correct: result.correct, total: result.total, maxStreak: result.maxStreak } : {}), rules: 1,
       ...(player && (player.profile.nickname || player.profile.avatar) ? { playerProfile: player.profile } : {}) } }));
-  invalidateBoard(result.mode);
+  if (revision !== identityRevision) throw { code: 'AUTHORIZATION_CONTEXT_CHANGED' };
+  invalidateBoard(result.mode, entry);
   return entry;
 }
 export async function copyGameLink(mode: Mode) {
