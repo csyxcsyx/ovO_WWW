@@ -2241,5 +2241,689 @@
       "title": "中国政府网_中央人民政府门户网站",
       "checkedAt": "2026-10-18"
     }
+  },
+  {
+    "id": "site-new-002",
+    "name": "Discord",
+    "category": "社交与社区",
+    "url": "https://discord.com/",
+    "domestic": false,
+    "acceptedHosts": [
+      "discord.com"
+    ],
+    "source": {
+      "url": "https://discord.com/",
+      "status": 200,
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "finalUrl": "https://discord.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-003",
+    "name": "即刻",
+    "category": "社交与社区",
+    "url": "https://www.okjike.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.okjike.com"
+    ],
+    "source": {
+      "url": "https://www.okjike.com/",
+      "status": 200,
+      "title": "即刻App",
+      "finalUrl": "https://www.okjike.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-004",
+    "name": "V2EX",
+    "category": "社交与社区",
+    "url": "https://www.v2ex.com/",
+    "domestic": false,
+    "acceptedHosts": [
+      "www.v2ex.com"
+    ],
+    "source": {
+      "url": "https://www.v2ex.com/",
+      "status": 200,
+      "title": "V2EX",
+      "finalUrl": "https://www.v2ex.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-005",
+    "name": "知识星球",
+    "category": "社交与社区",
+    "url": "https://www.zsxq.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.zsxq.com"
+    ],
+    "source": {
+      "url": "https://www.zsxq.com/",
+      "status": 200,
+      "title": "知识星球 | 深度连接铁杆粉丝，运营高品质社群",
+      "finalUrl": "https://www.zsxq.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-006",
+    "name": "得物",
+    "category": "电商与生活消费",
+    "url": "https://www.dewu.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.dewu.com"
+    ],
+    "source": {
+      "url": "https://www.dewu.com/",
+      "status": 200,
+      "title": "得物App-新一代潮流网购社区",
+      "finalUrl": "https://www.dewu.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-007",
+    "name": "苏宁易购",
+    "category": "电商与生活消费",
+    "url": "https://www.suning.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.suning.com"
+    ],
+    "source": {
+      "url": "https://www.suning.com/",
+      "status": 200,
+      "title": "苏宁易购(Suning.com)-换新到苏宁 省钱更省心！",
+      "finalUrl": "https://www.suning.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-008",
+    "name": "唯品会",
+    "category": "电商与生活消费",
+    "url": "https://www.vip.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.vip.com"
+    ],
+    "source": {
+      "url": "https://www.vip.com/",
+      "status": 200,
+      "title": "唯品会（vip.com）-11.11特卖狂欢节",
+      "finalUrl": "https://www.vip.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-009",
+    "name": "宜家中国",
+    "category": "电商与生活消费",
+    "url": "https://www.ikea.cn/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.ikea.cn"
+    ],
+    "source": {
+      "url": "https://www.ikea.cn/",
+      "status": 200,
+      "title": "宜家家居官网-家 给生活更多-宜家电商-提供客厅，卧室，厨房，各类家居灵感和产品解决方案- IKEA",
+      "finalUrl": "https://www.ikea.cn/cn/zh/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-011",
+    "name": "晋江文学城",
+    "category": "影音阅读与新闻",
+    "url": "https://www.jjwxc.net/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.jjwxc.net"
+    ],
+    "source": {
+      "url": "https://www.jjwxc.net/",
+      "status": 200,
+      "title": "晋江文学城",
+      "finalUrl": "https://www.jjwxc.net/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-013",
+    "name": "1905电影网",
+    "category": "影音阅读与新闻",
+    "url": "https://www.1905.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.1905.com"
+    ],
+    "source": {
+      "url": "https://www.1905.com/",
+      "status": 200,
+      "title": "电影网_1905.com",
+      "finalUrl": "https://www.1905.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-014",
+    "name": "中国新闻网",
+    "category": "影音阅读与新闻",
+    "url": "https://www.chinanews.com.cn/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.chinanews.com.cn"
+    ],
+    "source": {
+      "url": "https://www.chinanews.com.cn/",
+      "status": 200,
+      "title": "中国新闻网_梳理天下新闻",
+      "finalUrl": "https://www.chinanews.com.cn/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-015",
+    "name": "中华网",
+    "category": "影音阅读与新闻",
+    "url": "https://www.china.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.china.com"
+    ],
+    "source": {
+      "url": "https://www.china.com/",
+      "status": 200,
+      "title": "中华网—弘扬中华文化，共创全球华人精神家园",
+      "finalUrl": "https://www.china.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-016",
+    "name": "Apple 中国",
+    "category": "硬件科技与互联网",
+    "url": "https://www.apple.com.cn/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.apple.com.cn"
+    ],
+    "source": {
+      "url": "https://www.apple.com.cn/",
+      "status": 200,
+      "title": "Apple (中国大陆) - 官方网站",
+      "finalUrl": "https://www.apple.com.cn/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-017",
+    "name": "机械革命",
+    "category": "硬件科技与互联网",
+    "url": "https://www.mechrevo.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.mechrevo.com"
+    ],
+    "source": {
+      "url": "https://www.mechrevo.com/",
+      "status": 200,
+      "title": "机械革命_高性能游戏本_轻薄本_MECHREVO_机械革命官网",
+      "finalUrl": "https://www.mechrevo.com/cn",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-018",
+    "name": "罗技",
+    "category": "硬件科技与互联网",
+    "url": "https://www.logitech.com/zh-cn/",
+    "domestic": false,
+    "acceptedHosts": [
+      "www.logitech.com"
+    ],
+    "source": {
+      "url": "https://www.logitech.com/zh-cn/",
+      "status": 200,
+      "title": "罗技中国",
+      "finalUrl": "https://www.logitech.com/zh-cn",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-020",
+    "name": "惠普中国",
+    "category": "硬件科技与互联网",
+    "url": "https://www.hp.com/cn-zh/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.hp.com"
+    ],
+    "source": {
+      "url": "https://www.hp.com/cn-zh/",
+      "status": 200,
+      "title": "笔记本、台式机、打印机、墨盒与硒鼓 | 中国惠普",
+      "finalUrl": "https://www.hp.com/cn-zh/home.html",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-024",
+    "name": "Notion",
+    "category": "AI与办公软件",
+    "url": "https://www.notion.com/",
+    "domestic": false,
+    "acceptedHosts": [
+      "www.notion.com"
+    ],
+    "source": {
+      "url": "https://www.notion.com/",
+      "status": 200,
+      "title": "The AI workspace that works for you. | Notion",
+      "finalUrl": "https://www.notion.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-025",
+    "name": "Obsidian",
+    "category": "AI与办公软件",
+    "url": "https://obsidian.md/",
+    "domestic": false,
+    "acceptedHosts": [
+      "obsidian.md"
+    ],
+    "source": {
+      "url": "https://obsidian.md/",
+      "status": 200,
+      "title": "Obsidian - Sharpen your thinking",
+      "finalUrl": "https://obsidian.md/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-028",
+    "name": "任天堂",
+    "category": "游戏平台与社区",
+    "url": "https://www.nintendo.com/",
+    "domestic": false,
+    "acceptedHosts": [
+      "www.nintendo.com"
+    ],
+    "source": {
+      "url": "https://www.nintendo.com/",
+      "status": 200,
+      "title": "Nintendo - Official Site: Consoles, Games, News, and More",
+      "finalUrl": "https://www.nintendo.com/us/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-029",
+    "name": "PlayStation",
+    "category": "游戏平台与社区",
+    "url": "https://www.playstation.com/zh-hans-cn/",
+    "domestic": false,
+    "acceptedHosts": [
+      "www.playstation.com"
+    ],
+    "source": {
+      "url": "https://www.playstation.com/zh-hans-cn/",
+      "status": 200,
+      "title": "PlayStation®官方网站 - 主机、游戏、周边设备以及其他",
+      "finalUrl": "https://www.playstation.com/zh-hans-cn/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-030",
+    "name": "Xbox",
+    "category": "游戏平台与社区",
+    "url": "https://www.xbox.com/zh-CN/",
+    "domestic": false,
+    "acceptedHosts": [
+      "www.xbox.com"
+    ],
+    "source": {
+      "url": "https://www.xbox.com/zh-CN/",
+      "status": 200,
+      "title": "XBOX | 官方网站",
+      "finalUrl": "https://www.xbox.com/zh-CN/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-031",
+    "name": "英雄联盟国服",
+    "category": "游戏平台与社区",
+    "url": "https://lol.qq.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "lol.qq.com"
+    ],
+    "source": {
+      "url": "https://lol.qq.com/",
+      "status": 200,
+      "title": "英雄联盟全新官方网站-腾讯游戏",
+      "finalUrl": "https://lol.qq.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-035",
+    "name": "中国南方航空",
+    "category": "出行与旅游",
+    "url": "https://www.csair.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.csair.com"
+    ],
+    "source": {
+      "url": "https://www.csair.com/",
+      "status": 200,
+      "title": "中国南方航空官网-机票查询,机票预定,航班查询",
+      "finalUrl": "https://www.csair.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-036",
+    "name": "中国东方航空",
+    "category": "出行与旅游",
+    "url": "https://www.ceair.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.ceair.com"
+    ],
+    "source": {
+      "url": "https://www.ceair.com/",
+      "status": 200,
+      "title": "中国东方航空",
+      "finalUrl": "https://www.ceair.com/zh/cny/home",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-037",
+    "name": "中国国际航空",
+    "category": "出行与旅游",
+    "url": "https://www.airchina.com.cn/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.airchina.com.cn"
+    ],
+    "source": {
+      "url": "https://www.airchina.com.cn/",
+      "status": 200,
+      "title": "中国国际航空公司-飞机票查询预订_航班查询_最新打折特价机票",
+      "finalUrl": "https://www.airchina.com.cn/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-038",
+    "name": "穷游网",
+    "category": "出行与旅游",
+    "url": "https://www.qyer.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.qyer.com"
+    ],
+    "source": {
+      "url": "https://www.qyer.com/",
+      "status": 200,
+      "title": "【穷游网】自由行_自助游攻略_旅游攻略分享社区",
+      "finalUrl": "https://www.qyer.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-039",
+    "name": "中国大学MOOC",
+    "category": "教育招聘与开发",
+    "url": "https://www.icourse163.org/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.icourse163.org"
+    ],
+    "source": {
+      "url": "https://www.icourse163.org/",
+      "status": 200,
+      "title": "中国大学MOOC_优质在线课程学习平台",
+      "finalUrl": "https://www.icourse163.org/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-040",
+    "name": "慕课网",
+    "category": "教育招聘与开发",
+    "url": "https://www.imooc.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.imooc.com"
+    ],
+    "source": {
+      "url": "https://www.imooc.com/",
+      "status": 200,
+      "title": "慕课网-程序员的梦工厂",
+      "finalUrl": "https://www.imooc.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-041",
+    "name": "力扣",
+    "category": "教育招聘与开发",
+    "url": "https://leetcode.cn/",
+    "domestic": true,
+    "acceptedHosts": [
+      "leetcode.cn"
+    ],
+    "source": {
+      "url": "https://leetcode.cn/",
+      "status": 200,
+      "title": "力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+      "finalUrl": "https://leetcode.cn/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-042",
+    "name": "GitLab",
+    "category": "教育招聘与开发",
+    "url": "https://about.gitlab.com/",
+    "domestic": false,
+    "acceptedHosts": [
+      "about.gitlab.com"
+    ],
+    "source": {
+      "url": "https://about.gitlab.com/",
+      "status": 200,
+      "title": "GitLab - Speed with control for agentic software engineering",
+      "finalUrl": "https://about.gitlab.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-047",
+    "name": "中国工商银行",
+    "category": "金融支付与公共服务",
+    "url": "https://www.icbc.com.cn/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.icbc.com.cn"
+    ],
+    "source": {
+      "url": "https://www.icbc.com.cn/",
+      "status": 200,
+      "title": "中国工商银行中国网站",
+      "finalUrl": "https://www.icbc.com.cn/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-049",
+    "name": "招商银行",
+    "category": "金融支付与公共服务",
+    "url": "https://www.cmbchina.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.cmbchina.com"
+    ],
+    "source": {
+      "url": "https://www.cmbchina.com/",
+      "status": 200,
+      "title": "一网通主页 -- 招商银行官方网站",
+      "finalUrl": "https://www.cmbchina.com/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-050",
+    "name": "国家统计局",
+    "category": "金融支付与公共服务",
+    "url": "https://www.stats.gov.cn/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.stats.gov.cn"
+    ],
+    "source": {
+      "url": "https://www.stats.gov.cn/",
+      "status": 200,
+      "title": "国家统计局",
+      "finalUrl": "https://www.stats.gov.cn/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-051",
+    "name": "中国国家博物馆",
+    "category": "金融支付与公共服务",
+    "url": "https://www.chnmuseum.cn/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.chnmuseum.cn"
+    ],
+    "source": {
+      "url": "https://www.chnmuseum.cn/",
+      "status": 200,
+      "title": "中国国家博物馆官方网站",
+      "finalUrl": "https://www.chnmuseum.cn/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-052",
+    "name": "LibreOffice",
+    "category": "AI与办公软件",
+    "url": "https://www.libreoffice.org/",
+    "domestic": false,
+    "acceptedHosts": [
+      "www.libreoffice.org"
+    ],
+    "source": {
+      "url": "https://www.libreoffice.org/",
+      "status": 200,
+      "title": "Free and private office suite, no forced AI — LibreOffice",
+      "finalUrl": "https://www.libreoffice.org/",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
+  },
+  {
+    "id": "site-new-053",
+    "name": "印象笔记",
+    "category": "AI与办公软件",
+    "url": "https://www.yinxiang.com/",
+    "domestic": true,
+    "acceptedHosts": [
+      "www.yinxiang.com"
+    ],
+    "source": {
+      "url": "https://www.yinxiang.com/",
+      "status": 200,
+      "title": "印象笔记 - AI时代的第二大脑",
+      "finalUrl": "https://www.yinxiang.com/?tab=gaga",
+      "checkedAt": "2026-10-20"
+    },
+    "verifiedAt": "2026-10-20",
+    "reviewedAt": "2026-10-20"
   }
 ]

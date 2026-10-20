@@ -1,0 +1,486 @@
+[
+  {
+    "id": "site-new-001",
+    "name": "QQ",
+    "category": "社交与社区",
+    "url": "https://im.qq.com/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-002",
+    "name": "Discord",
+    "category": "社交与社区",
+    "url": "https://discord.com/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-003",
+    "name": "即刻",
+    "category": "社交与社区",
+    "url": "https://www.okjike.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "友网络科技有限公司 &nbsp; 用户协议 &nbsp; 隐私政策 沪ICP备15000478号-2 &nbsp; 沪公网安备 31011002003645号 &nbsp; 沪网文〔2022〕0384-034 &nbsp; 增值电信业务经营许可证：沪B2-20180758 &n"
+  },
+  {
+    "id": "site-new-004",
+    "name": "V2EX",
+    "category": "社交与社区",
+    "url": "https://www.v2ex.com/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-005",
+    "name": "知识星球",
+    "category": "社交与社区",
+    "url": "https://www.zsxq.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "品功能 星球推荐 星球榜单 登录网页版 支持 联系客服 知识星球帮助 关于我们 法律 用户协议 隐私政策 收费公示 版权所有&copy;知识星球 深圳市大成天下信息技术有限公司 粤ICP备11024818号 · 粤公网安备44030502005854号 · 网信算备440305"
+  },
+  {
+    "id": "site-new-006",
+    "name": "得物",
+    "category": "电商与生活消费",
+    "url": "https://www.dewu.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "相机扫码下载 增值电信业务经营许可证 沪B2-20180281 | 沪ICP备16019780号-9号 网络文化经营许可证 沪网文（2021）4421-366号 | 沪公网安备31010902003239号 医疗器械网络交易服务第三方平台备案:（沪）网械平台备字［2021］第0"
+  },
+  {
+    "id": "site-new-007",
+    "name": "苏宁易购",
+    "category": "电商与生活消费",
+    "url": "https://www.suning.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "00多个城市，上万个门店和服务终端期待您的光临，为您提供贴心的服务！ Copyright© 2020-2026深圳市云网万店电子商务有限公司版权所有 | 苏公网安备32010602012243号 | 粤ICP备2021027996号 云网万店增值电信业务许可证-合字B2-20210115"
+  },
+  {
+    "id": "site-new-008",
+    "name": "唯品会",
+    "category": "电商与生活消费",
+    "url": "https://www.vip.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-009",
+    "name": "宜家中国",
+    "category": "电商与生活消费",
+    "url": "https://www.ikea.cn/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-010",
+    "name": "盒马",
+    "category": "电商与生活消费",
+    "url": "https://www.freshippo.com/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-011",
+    "name": "晋江文学城",
+    "category": "影音阅读与新闻",
+    "url": "https://www.jjwxc.net/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "里我们可以求文、留评、湖绿、直播。 晋江“小粉红”，就在这里，等你！ 关于我们 － 联系方式 － 联系客服 － 读者导航 － 作者导航 － 招纳贤才 － 权利声明 － 广告服务 － 友情链接 － 常见问题 － 诊断工具 公安部网络违法犯罪举报网站 网上有害信息举报专区 涉养老诈"
+  },
+  {
+    "id": "site-new-012",
+    "name": "36氪",
+    "category": "影音阅读与新闻",
+    "url": "https://www.36kr.com/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-013",
+    "name": "1905电影网",
+    "category": "影音阅读与新闻",
+    "url": "https://www.1905.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "谢你的包容 12月16日上映 复仇者联盟5 12月31日上映 活久久 关于我们 | 网站地图 | 诚聘英才 | 版权声明 | 联系我们 | 帮助与反馈 | 友情链接 | CCTV6广告招商 网络视听许可证0107199号 出版物经营许可证 经营性演出许可证 广播电视节目制作经营"
+  },
+  {
+    "id": "site-new-014",
+    "name": "中国新闻网",
+    "category": "影音阅读与新闻",
+    "url": "https://www.chinanews.com.cn/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "川新闻网 | 四川广播电视台 | 新浪 | 搜狐 | 网易 | 腾讯 关于我们 About us 联系我们 广告服务 供稿服务 法律声明 招聘信息 网站地图 本网站所刊载信息，不代表中新社和中新网观点。 刊用本网站稿件，务经书面授权。 未经授权禁止转载、摘编、复制及建立镜像，违"
+  },
+  {
+    "id": "site-new-015",
+    "name": "中华网",
+    "category": "影音阅读与新闻",
+    "url": "https://www.china.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "316 举报信箱： jubao@china.com 执行主编：杨靖 京ICP备18035944号-2 @版权所有 中华网"
+  },
+  {
+    "id": "site-new-016",
+    "name": "Apple 中国",
+    "category": "硬件科技与互联网",
+    "url": "https://www.apple.com.cn/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "e 零售店 及 更多门店 ， 或者致电 400-666-8800 。 Copyright © 2026 Apple Inc. 保留所有权利。 隐私政策 使用条款 销售政策 法律信息 网站地图 京ICP备10214630号 &nbsp; 营业执照 &nbsp; 无线电发射设备销售备案编号1"
+  },
+  {
+    "id": "site-new-017",
+    "name": "机械革命",
+    "category": "硬件科技与互联网",
+    "url": "https://www.mechrevo.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "务与支持 了解更多 应用商店 立即下载 联系我们 了解更多 机械革命 关于我们 加入我们 新闻资讯 线上商城 机械革命官方商城 京东官方旗舰店 天猫官方旗舰店 线下门店 全国门店查询 服务与支持 驱动程序下载 线上寄修服务 服务中心查询 服务政策条款 在线客服支持 © 2026"
+  },
+  {
+    "id": "site-new-018",
+    "name": "罗技",
+    "category": "硬件科技与互联网",
+    "url": "https://www.logitech.com/zh-cn/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": ". 保留所有权利 使用条款 隐私政策 Cookie 设置 网站地图 沪ICP备12002604号-1 罗技"
+  },
+  {
+    "id": "site-new-019",
+    "name": "戴尔中国",
+    "category": "硬件科技与互联网",
+    "url": "https://www.dell.com/zh-cn/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-020",
+    "name": "惠普中国",
+    "category": "硬件科技与互联网",
+    "url": "https://www.hp.com/cn-zh/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "ية ไทย 中华人民共和国 臺灣 地區 日本 香港特別行政區 한국 关于我们 关于我们 联系 HP 人才招聘 投资者关系 可持续发展进展 Newsroom 购买方式 购买方式 在线商店 产品售前咨询 查找经销商 支持 支持 下载驱动程序 支持和故障排除 社区 授权服务提供商 "
+  },
+  {
+    "id": "site-new-021",
+    "name": "腾讯元宝",
+    "category": "AI与办公软件",
+    "url": "https://yuanbao.tencent.com/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-022",
+    "name": "金山文档",
+    "category": "AI与办公软件",
+    "url": "https://www.kdocs.cn/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-023",
+    "name": "Canva 可画",
+    "category": "AI与办公软件",
+    "url": "https://www.canva.cn/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-024",
+    "name": "Notion",
+    "category": "AI与办公软件",
+    "url": "https://www.notion.com/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "p Center Academy Community Company About us Careers Security Status Terms &amp; privacy Your privacy rights Notion for Enterprise Small busines"
+  },
+  {
+    "id": "site-new-025",
+    "name": "Obsidian",
+    "category": "AI与办公软件",
+    "url": "https://obsidian.md/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-026",
+    "name": "Epic Games 商店",
+    "category": "游戏平台与社区",
+    "url": "https://store.epicgames.com/zh-CN/",
+    "domestic": false,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-027",
+    "name": "TapTap",
+    "category": "游戏平台与社区",
+    "url": "https://www.taptap.cn/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-028",
+    "name": "任天堂",
+    "category": "游戏平台与社区",
+    "url": "https://www.nintendo.com/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-029",
+    "name": "PlayStation",
+    "category": "游戏平台与社区",
+    "url": "https://www.playstation.com/zh-hans-cn/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "和/或商业外观、商标、美术设计图以及相关图像均为各自所有者的商标和/或版权所有内容。保留所有权利。 更多信息 沪ICP备14040797号 违法和不良信息举报电话&#xff08;含涉及未成年人的不良信息或网络数据安全举报&#xff09;&#xff1a;400-810-8166 "
+  },
+  {
+    "id": "site-new-030",
+    "name": "Xbox",
+    "category": "游戏平台与社区",
+    "url": "https://www.xbox.com/zh-CN/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "soft 联系 隐私 管理 Cookie 使用条款 商标 第三方通知 关于我们的广告 京ICP备09042378号-6 京公网安备 11010802023178"
+  },
+  {
+    "id": "site-new-031",
+    "name": "英雄联盟国服",
+    "category": "游戏平台与社区",
+    "url": "https://lol.qq.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-032",
+    "name": "三角洲行动",
+    "category": "游戏平台与社区",
+    "url": "https://df.qq.com/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-033",
+    "name": "马蜂窝",
+    "category": "出行与旅游",
+    "url": "https://www.mafengwo.cn/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-034",
+    "name": "航旅纵横",
+    "category": "出行与旅游",
+    "url": "https://www.umetrip.com/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-035",
+    "name": "中国南方航空",
+    "category": "出行与旅游",
+    "url": "https://www.csair.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-036",
+    "name": "中国东方航空",
+    "category": "出行与旅游",
+    "url": "https://www.ceair.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-037",
+    "name": "中国国际航空",
+    "category": "出行与旅游",
+    "url": "https://www.airchina.com.cn/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-038",
+    "name": "穷游网",
+    "category": "出行与旅游",
+    "url": "https://www.qyer.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "下载 下载穷游App 意见反馈 意见反馈 联系方式 提交 0/140 关于我们 穷游简介 联系我们 合作伙伴 加入穷游 招聘职位 网站条款 会员条款 社区指南 版权声明 免责声明 帮助中心 新手上路 使用帮助 网站地图 旅行工具 2004-2026 © 穷游网® qyer.co"
+  },
+  {
+    "id": "site-new-039",
+    "name": "中国大学MOOC",
+    "category": "教育招聘与开发",
+    "url": "https://www.icourse163.org/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "名高校的课程，并获得认证。 友情链接 网易云课堂 智慧高教 关注我们 关于我们 关于我们 学校云 联系我们 常见问题 意见反馈 法律条款 考研加盟 网上有害信息举报（涉未成年人）：网站 https://www.12377.cn 邮箱（涉未成年人） youdao_jubao@rd"
+  },
+  {
+    "id": "site-new-040",
+    "name": "慕课网",
+    "category": "教育招聘与开发",
+    "url": "https://www.imooc.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "l+D 可将网站添加到书签 收藏网站 官方公众号 官方微博 官方空间 关于我们 --> 企业合作 --> 企业服务 网站地图 关于我们 联系我们 讲师招募 帮助中心 意见反馈 慕课大学 --> 代码托管 友情链接 --> Copyright©&nbsp2026&nbspimoo"
+  },
+  {
+    "id": "site-new-041",
+    "name": "力扣",
+    "category": "教育招聘与开发",
+    "url": "https://leetcode.cn/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": " 1 题 3886 . 可排序整数求和 欢迎来到力扣 登录 / 注册 关于我们 · 企业服务 · 商务咨询 · 使用条款 · 隐私政策 问题反馈 · 侵权投诉 · 证照中心 沪ICP备18019787号-20 · 沪ICP证B2-20180578 沪公网安备3101070200"
+  },
+  {
+    "id": "site-new-042",
+    "name": "GitLab",
+    "category": "教育招聘与开发",
+    "url": "https://about.gitlab.com/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "this page Please contribute © 2026 GitLab Inc."
+  },
+  {
+    "id": "site-new-043",
+    "name": "Go",
+    "category": "教育招聘与开发",
+    "url": "https://go.dev/",
+    "domestic": false,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-044",
+    "name": "Rust",
+    "category": "教育招聘与开发",
+    "url": "https://rust-lang.org/",
+    "domestic": false,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-045",
+    "name": "中国银联",
+    "category": "金融支付与公共服务",
+    "url": "https://www.unionpay.com/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-046",
+    "name": "中国邮政",
+    "category": "金融支付与公共服务",
+    "url": "https://www.chinapost.com.cn/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-047",
+    "name": "中国工商银行",
+    "category": "金融支付与公共服务",
+    "url": "https://www.icbc.com.cn/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-048",
+    "name": "中国建设银行",
+    "category": "金融支付与公共服务",
+    "url": "https://www.ccb.com/",
+    "domestic": true,
+    "reviewed": false
+  },
+  {
+    "id": "site-new-049",
+    "name": "招商银行",
+    "category": "金融支付与公共服务",
+    "url": "https://www.cmbchina.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "投资视点 产品平台 品质服务 工作范式 首页推荐 中心地图 联系我们 关于我们 媒体报道 个人贷款 小微贷 住房贷款 个人消费贷款 互联网贷款合作机构信息 商业用房贷款 特色创新功能 全国个贷中心 按揭贷款月供计算器 其他 储蓄业务 个人结汇／购汇业务 教育储蓄 个人通知存款 "
+  },
+  {
+    "id": "site-new-050",
+    "name": "国家统计局",
+    "category": "金融支付与公共服务",
+    "url": "https://www.stats.gov.cn/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "会 --> 中国国民经济核算研究会 中国统计教育学会 --> --> 版权所有: 国家统计局&emsp;&emsp; 联系我们 &emsp;&emsp; 服务条款 &emsp;&emsp; 网站地图 地址: 北京市西城区月坛南街57号 (100826) 京ICP备0503467"
+  },
+  {
+    "id": "site-new-051",
+    "name": "中国国家博物馆",
+    "category": "金融支付与公共服务",
+    "url": "https://www.chnmuseum.cn/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。"
+  },
+  {
+    "id": "site-new-052",
+    "name": "LibreOffice",
+    "category": "AI与办公软件",
+    "url": "https://www.libreoffice.org/",
+    "domestic": false,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": ") Satzung (binding German version) Copyright information: Unless otherwise specified, all text and images on this website are licensed under the"
+  },
+  {
+    "id": "site-new-053",
+    "name": "印象笔记",
+    "category": "AI与办公软件",
+    "url": "https://www.yinxiang.com/",
+    "domestic": true,
+    "reviewed": true,
+    "reviewNote": "已核对官网品牌、产品或服务页面；同域路径跳转不改变域名，未以HTTP状态码自动认定身份。",
+    "identityEvidence": "ga Note 扫描宝 剪识 探索印象 功能亮点 产品动态 使用帮助 关于我们 公司愿景 公司简介 新闻动态 联系我们 法律信息 用户权限 联系我们 隐私保护 安全信息 版权所有2007-2025印象笔记.保留一切权利. 北京印象笔记科技有限公司 北京市朝阳区光华东里8号中海广"
+  }
+]
