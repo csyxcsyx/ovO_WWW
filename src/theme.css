@@ -58,9 +58,6 @@ code, kbd { font-family: var(--mono); }
 .personal-best:active { background: #e4e4e4; }
 .personal-best strong { color: #535353; font-family: var(--mono); font-weight: 500; }
 .home-footer { grid-area: footer; display: flex; justify-content: space-between; align-items: center; margin: 55px 26px 0; padding-top: 22px; border-top: 1px solid var(--line); font-size: 12px; color: #707070; }
-.bank-stats { display: flex; gap: 24px; color: #707070; }
-.bank-stats > span { display: flex; align-items: center; gap: 7px; }
-.bank-stats strong { color: #494949; font: 500 13px var(--mono); }
 .game-page { max-width: 650px; margin: 45px auto 0; }
 .game-topline { display: flex; align-items: center; justify-content: space-between; }
 .mode-label { display: flex; align-items: center; gap: 6px; color: #707070; font-size: 12px; }
@@ -253,9 +250,6 @@ mark { background: #dbdbdb; color: #313131; border-radius: 3px; padding: 1px 0; 
   .personal-best { font-size: 13px; margin-top: 8px; min-height: 48px; }
   .personal-best svg { width: 15px; height: 15px; }
   .home-footer { order: 6; margin: 18px 0 0; padding-top: 18px; flex-direction: column; gap: 12px; align-items: center; }
-  .bank-stats { gap: 25px; font-size: 12px; }
-  .bank-stats strong { font-size: 13px; }
-  .bank-stats svg { width: 16px; height: 16px; }
   .home-footer > p { font-size: 12px; }
   .game-page { margin-top: 22px; }
   .game-status { margin-top: 24px; }

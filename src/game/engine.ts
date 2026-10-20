@@ -1,5 +1,5 @@
-import { questions } from '../data/questions';
-import type { AnswerIntent, Difficulty, GameResult, GameState, Mode, Question } from './types';
+import type { AnswerIntent, GameResult, GameState, Mode } from './types';
+import { drawQuestion, emptyDraw } from './draw';
 
 export const FEEDBACK_MS = 650;
 export const SPRINT_MS = 60_000;
@@ -14,24 +14,11 @@ export function shuffle<T>(items: readonly T[], random: Random = Math.random): T
   }
   return next;
 }
-export function difficultyAt(answered: number): Difficulty {
-  return answered < 5 ? 'easy' : answered < 10 ? 'medium' : 'hard';
-}
-export function pickQuestion(answered: number, asked: string[], recentSites: string[], random: Random = Math.random, pool: Question[] = questions): Question {
-  const tier = pool.filter(q => q.difficulty === difficultyAt(answered));
-  const unseen = tier.filter(q => !asked.includes(q.id));
-  const available = unseen.length ? unseen : tier;
-  const unseenSites = available.filter(q => !recentSites.includes(q.siteId));
-  const notPrevious = available.filter(q => q.siteId !== recentSites.at(-1));
-  const candidates = unseenSites.length ? unseenSites : notPrevious.length ? notPrevious : available;
-  if (!candidates.length) throw new Error('题库中缺少当前难度的题目');
-  return candidates[Math.floor(random() * candidates.length)];
-}
 export function startGame(mode: Mode, now: number, random: Random = Math.random, runId = `${mode}-${now}`): GameState {
-  const question = pickQuestion(0, [], [], random);
+  const { question, draw } = drawQuestion(0, [], emptyDraw(), random);
   return { runId, questionSequence: 0, mode, phase: 'playing', question, choices: shuffle(question.choices, random), history: [],
     startedAt: now, questionStartedAt: now, deadline: now + (mode === 'sprint' ? SPRINT_MS : QUESTION_MS),
-    feedbackUntil: 0, score: 0, correct: 0, mistakes: 0, streak: 0, maxStreak: 0, recentSites: [question.siteId], asked: [question.id] };
+    feedbackUntil: 0, score: 0, correct: 0, mistakes: 0, streak: 0, maxStreak: 0, recentSites: [question.siteId], asked: [question.id], draw };
 }
 export function finishGame(state: GameState, now: number): GameState {
   return { ...state, phase: 'finished', finishedAt: now };
@@ -71,10 +58,10 @@ export function tick(state: GameState, now: number, visible: boolean, random: Ra
   if (state.phase === 'playing' && now >= state.deadline) return answer(state, null, now);
   if (state.phase === 'feedback' && now >= state.feedbackUntil && visible) {
     if (state.mode === 'survival' && state.mistakes >= 3) return finishGame(state, now);
-    const question = pickQuestion(state.history.length, state.asked, state.recentSites, random);
+    const { question, draw } = drawQuestion(state.history.length, state.asked, state.draw, random);
     return { ...state, phase: 'playing', questionSequence: state.questionSequence + 1, question, choices: shuffle(question.choices, random),
       questionStartedAt: now, deadline: state.mode === 'survival' ? now + QUESTION_MS : state.deadline,
-      asked: [...state.asked, question.id], recentSites: [...state.recentSites, question.siteId] };
+      asked: [...state.asked, question.id], recentSites: [...state.recentSites, question.siteId].slice(-8), draw };
   }
   return state;
 }

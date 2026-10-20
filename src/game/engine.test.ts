@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { answer, answerTurn, difficultyAt, FEEDBACK_MS, pickQuestion, resultFrom, secondsLeft, shuffle, startGame, tick } from './engine';
+import { answer, answerTurn, FEEDBACK_MS, resultFrom, secondsLeft, shuffle, startGame, tick } from './engine';
 import { questions } from '../data/questions';
 import type { GameState } from './types';
 
@@ -112,21 +112,14 @@ describe('deadline-based game', () => {
   });
 });
 describe('question selection', () => {
-  it('progresses difficulty at 5 and 10 answers', () => {
-    expect([0,4,5,9,10,99].map(difficultyAt)).toEqual(['easy','easy','medium','medium','hard','hard']);
-    let state = startGame('sprint', 0, random);
-    for (let i=0;i<5;i++) state = advance(state);
-    expect(state.question.difficulty).toBe('medium');
-    for (let i=0;i<5;i++) state = advance(state);
-    expect(state.question.difficulty).toBe('hard');
-  });
-  it('avoids used questions and sites, reshuffles an exhausted tier', () => {
-    const pool = questions.filter(q => q.difficulty === 'easy').slice(0,3);
-    const first = pickQuestion(0, [], [], () => 0, pool);
-    const next = pickQuestion(0, [first.id], [first.siteId], () => 0, pool);
-    expect(next.siteId).not.toBe(first.siteId);
-    const recycled = pickQuestion(0, pool.map(q=>q.id), pool.map(q=>q.siteId), () => 0, pool);
-    expect(recycled.siteId).not.toBe(pool.at(-1)!.siteId);
+  it('scores the impostor as the answer rather than the two official options', () => {
+    const question = questions.find(question => question.objective === 'impostor')!;
+    const state = { ...startGame('survival', 0, random), question, choices: question.choices };
+    expect(answer(state, question.correctId, 100).score).toBe(1);
+    for (const choice of question.choices.filter(choice => choice.id !== question.correctId)) {
+      const wrong = answer(state, choice.id, 100);
+      expect(wrong.score).toBe(0); expect(wrong.mistakes).toBe(1);
+    }
   });
   it('shuffle preserves options without mutating the input', () => {
     const items = [1,2,3]; expect(shuffle(items, () => 0).sort()).toEqual(items); expect(items).toEqual([1,2,3]);

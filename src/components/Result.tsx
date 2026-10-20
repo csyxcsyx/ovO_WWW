@@ -46,7 +46,7 @@ export function Result({ result, isNewBest, ready, sync, onAgain, onHome, onRank
     <div className="result-content">
       <div className="receipt" ref={receipt}>
         <div className="receipt-top"><span><BrandMark />官网鉴定局</span><span>{MODE_LABEL[result.mode]}</span></div>
-        <div className="result-score"><span>{result.mode === 'sprint' ? '本局得分' : '成功认出'}</span><strong><AnimatedNumber value={result.score} /><small>{result.mode === 'sprint' ? '分' : '题'}</small></strong>{isNewBest && <span className="result-badge"><Trophy size={14} aria-hidden="true" />个人新纪录</span>}</div>
+        <div className="result-score"><span>{result.mode === 'sprint' ? '本局得分' : '本局答对'}</span><strong><AnimatedNumber value={result.score} /><small>{result.mode === 'sprint' ? '分' : '题'}</small></strong>{isNewBest && <span className="result-badge"><Trophy size={14} aria-hidden="true" />个人新纪录</span>}</div>
         <div className="receipt-stats"><div><strong>{accuracy}<small>%</small></strong><span>正确率</span></div><div><strong>{result.correct}<small>/{result.total}</small></strong><span>答对题数</span></div><div><strong>{result.maxStreak}</strong><span>最长连击</span></div></div>
         <div className="receipt-watermark-space" aria-hidden="true" />
       </div>
